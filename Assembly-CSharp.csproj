@@ -53,14 +53,14 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-    <Compile Include="Assets/Scripts/CameraMovement.cs" />
-    <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/PlayerDialogue.cs" />
-    <Compile Include="Assets/Scripts/DialogueInfo.cs" />
     <Compile Include="Assets/Scripts/PlayerTouch.cs" />
-    <Compile Include="Assets/Scripts/ItemDialogue.cs" />
     <Compile Include="Assets/Scripts/PlayerCollision.cs" />
+    <Compile Include="Assets/Scripts/GameManager.cs" />
+    <Compile Include="Assets/Scripts/CameraMovement.cs" />
+    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/ItemDialogue.cs" />
+    <Compile Include="Assets/Scripts/DialogueInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerTouch : MonoBehaviour
 {
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameManager gameManager;
 
     public bool touchMode = true;
     public int touchNumber = 0;
@@ -13,6 +14,11 @@ public class PlayerTouch : MonoBehaviour
     {
         if (touchMode)
         {
+            if (gameManager.stage == 4)
+            {
+                touchMode = false;
+                StartCoroutine(ShowEnding());
+            }
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
@@ -25,5 +31,11 @@ public class PlayerTouch : MonoBehaviour
                 // else => play animation
             }
         }
+    }
+
+    IEnumerator ShowEnding()
+    {
+        yield return new WaitForSeconds(2.0f);
+        GetComponent<PlayerDialogue>().ShowDialogue(false);
     }
 }

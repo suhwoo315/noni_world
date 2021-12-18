@@ -11,4 +11,5 @@ public class DialogueInfo
     public string[] dialogue3;
     public string[] dialogue4;
     public string[] dialogue5;
+    public string[] dialogue6;
 }

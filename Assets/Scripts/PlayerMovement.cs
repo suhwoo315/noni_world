@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerRigidbody;
     private float horizontal;
     private float vertical;
-    private float speed = 2.0f;
+    private float speed = 3.0f;
 
     private float leftLimit;
     private float rightLimit;
@@ -60,6 +60,10 @@ public class PlayerMovement : MonoBehaviour
                 playerRigidbody.velocity = new Vector2(0, 0);
                 fallMode = false;
                 moveMode = true;
+                gameManager.ActivateCollider();
+                gameManager.ActivateCollision();
+                gameManager.ShowGalaxies();
+                gameManager.RevealItems();
             }
         }
 
@@ -82,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator StartRotation()
     {
-        // rotation code
+        // rotation animation
         yield return new WaitForSeconds(1.0f);
     }
 }

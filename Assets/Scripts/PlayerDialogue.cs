@@ -20,7 +20,7 @@ public class PlayerDialogue : MonoBehaviour
         this.roundCleared = roundCleared;
         line = 0;
         stage = gameManager.stage;
-        if (roundCleared) dialogue = dialogueInfo.dialogue5;
+        if (roundCleared) dialogue = dialogueInfo.dialogue6;
         else
         {
             switch (stage)
@@ -30,6 +30,7 @@ public class PlayerDialogue : MonoBehaviour
                 case 2: dialogue = dialogueInfo.dialogue2; break;
                 case 3: dialogue = dialogueInfo.dialogue3; break;
                 case 4: dialogue = dialogueInfo.dialogue4; break;
+                case 5: dialogue = dialogueInfo.dialogue5; break;
                 default: Debug.Log("invalid dialogue number"); break;
             }
         }
@@ -47,18 +48,23 @@ public class PlayerDialogue : MonoBehaviour
             {
                 canvas.SetActive(false);
                 gameManager.ActivateRise();
+                gameManager.DeactivateCollider();
             }
             else if (stage == 0)
             {
                 gameManager.IncreaseStage();
                 gameManager.ActivateTouch();
             }
-            else if (0 < stage && stage < 4)
+            else if ((0 < stage && stage < 4) || stage == 5)
             {
                 gameManager.SetTargetHP();
                 gameManager.ActivateFall();
             }
-            else gameManager.ShowCredit();
+            else if (stage == 4)
+            {
+                gameManager.IncreaseStage();
+                gameManager.ShowCredit();
+            }
         }
         else dialogueText.text = dialogue[line++];
     }
