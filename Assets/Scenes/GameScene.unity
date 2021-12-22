@@ -163,9 +163,9 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - asdf
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1490666698}
-  player: {fileID: 0}
   dialogueText: {fileID: 1923298061}
   newItem: 1
 --- !u!61 &6120221
@@ -812,9 +812,9 @@ MonoBehaviour:
   - sdfg
   dialogue3:
   - dgf
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 376234252}
-  player: {fileID: 0}
   dialogueText: {fileID: 543375933}
   newItem: 1
 --- !u!61 &228624485
@@ -1259,9 +1259,9 @@ MonoBehaviour:
   dialogue3:
   - fgh
   - as
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1375200397}
-  player: {fileID: 0}
   dialogueText: {fileID: 2094674299}
   newItem: 1
 --- !u!61 &333587794
@@ -1911,9 +1911,9 @@ MonoBehaviour:
   - xcvb
   dialogue3:
   - qew
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 673326689}
-  player: {fileID: 463840863}
   dialogueText: {fileID: 1242691561}
   newItem: 1
 --- !u!61 &434805423
@@ -2893,9 +2893,9 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - af
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1503280127}
-  player: {fileID: 0}
   dialogueText: {fileID: 1289481917}
   newItem: 1
 --- !u!61 &544912922
@@ -3338,9 +3338,9 @@ MonoBehaviour:
   dialogue3:
   - asdf
   - dgh
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 929915840}
-  player: {fileID: 0}
   dialogueText: {fileID: 1809393426}
   newItem: 1
 --- !u!95 &627555505
@@ -3878,8 +3878,8 @@ GameObject:
   - component: {fileID: 814517735}
   - component: {fileID: 814517734}
   - component: {fileID: 814517733}
-  - component: {fileID: 814517732}
   - component: {fileID: 814517736}
+  - component: {fileID: 814517732}
   m_Layer: 0
   m_Name: window rain
   m_TagString: Item
@@ -3896,16 +3896,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 814517731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 1596623bcbda648b29c0641ad0dafbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asf
+  dialogue1:
+  - sdfg
+  dialogue2:
+  - zcv
+  dialogue3:
+  - wer
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1324041446}
-  player: {fileID: 0}
   dialogueText: {fileID: 1679661714}
   newItem: 1
 --- !u!61 &814517733
@@ -4191,9 +4195,9 @@ MonoBehaviour:
   - vd
   dialogue3:
   - jyg
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1544350428}
-  player: {fileID: 0}
   dialogueText: {fileID: 1301444541}
   newItem: 1
 --- !u!61 &880260168
@@ -4299,8 +4303,8 @@ GameObject:
   - component: {fileID: 891842585}
   - component: {fileID: 891842584}
   - component: {fileID: 891842583}
-  - component: {fileID: 891842582}
   - component: {fileID: 891842586}
+  - component: {fileID: 891842582}
   m_Layer: 0
   m_Name: summer grass
   m_TagString: Item
@@ -4317,16 +4321,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 891842581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: c4ee712221cb64082b779fb6c9dc6aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - sdg
+  dialogue2:
+  - dfg
+  dialogue3:
+  - sdfg
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 946550413}
-  player: {fileID: 0}
   dialogueText: {fileID: 758810485}
   newItem: 1
 --- !u!61 &891842583
@@ -4584,8 +4592,8 @@ GameObject:
   - component: {fileID: 922191371}
   - component: {fileID: 922191370}
   - component: {fileID: 922191369}
-  - component: {fileID: 922191368}
   - component: {fileID: 922191372}
+  - component: {fileID: 922191368}
   m_Layer: 0
   m_Name: sky
   m_TagString: Item
@@ -4602,16 +4610,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 922191367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: c098850b0b73842a6bf5b45ce7e9e5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - sdfg
+  dialogue3:
+  - er
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2002037223}
-  player: {fileID: 0}
   dialogueText: {fileID: 1611013927}
   newItem: 1
 --- !u!61 &922191369
@@ -5393,9 +5405,9 @@ MonoBehaviour:
   - zxcv
   dialogue3:
   - tyui
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 496701647}
-  player: {fileID: 463840863}
   dialogueText: {fileID: 1536327643}
   newItem: 1
 --- !u!61 &1041400063
@@ -5742,9 +5754,9 @@ MonoBehaviour:
   - asf
   dialogue3:
   - asdf
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 439244491}
-  player: {fileID: 0}
   dialogueText: {fileID: 255938623}
   newItem: 1
 --- !u!61 &1128055568
@@ -8061,8 +8073,8 @@ GameObject:
   - component: {fileID: 1405702847}
   - component: {fileID: 1405702846}
   - component: {fileID: 1405702845}
-  - component: {fileID: 1405702844}
   - component: {fileID: 1405702848}
+  - component: {fileID: 1405702844}
   m_Layer: 0
   m_Name: wanderer
   m_TagString: Item
@@ -8079,16 +8091,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1405702843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c70f41ecc0164839995ce6da0a02d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - asdf
+  dialogue3:
+  - adsf
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2074747607}
-  player: {fileID: 0}
   dialogueText: {fileID: 250608862}
   newItem: 1
 --- !u!61 &1405702845
@@ -8583,9 +8599,9 @@ MonoBehaviour:
   - dfg
   dialogue3:
   - cv
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1362327643}
-  player: {fileID: 0}
   dialogueText: {fileID: 1350653884}
   newItem: 1
 --- !u!61 &1494425525
@@ -9300,8 +9316,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922191368}
-        m_TargetAssemblyTypeName: ItemDialogue, Assembly-CSharp
+      - m_Target: {fileID: 1639188398}
+        m_TargetAssemblyTypeName: Sign, Assembly-CSharp
         m_MethodName: ItemNextDialogue
         m_Mode: 1
         m_Arguments:
@@ -9361,8 +9377,8 @@ GameObject:
   - component: {fileID: 1639188396}
   - component: {fileID: 1639188395}
   - component: {fileID: 1639188397}
-  - component: {fileID: 1639188398}
   - component: {fileID: 1639188399}
+  - component: {fileID: 1639188398}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Finish
@@ -9471,18 +9487,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1639188394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 7dc692003db4c4642ae5c0a53902e1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
+  firstDialogue:
+  - asdf
+  - sdg
   dialogue1: []
   dialogue2: []
   dialogue3: []
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1705083344}
-  player: {fileID: 0}
   dialogueText: {fileID: 1750606128}
-  newItem: 0
+  newItem: 1
 --- !u!95 &1639188399
 Animator:
   serializedVersion: 3
@@ -9934,16 +9952,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781160492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: ba2c14331fc984ed790efb535ec68c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - adf
+  dialogue3:
+  - asdf
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 759251653}
-  player: {fileID: 0}
   dialogueText: {fileID: 1352401833}
   newItem: 1
 --- !u!61 &1781160494
@@ -10419,8 +10441,8 @@ GameObject:
   - component: {fileID: 1934525384}
   - component: {fileID: 1934525383}
   - component: {fileID: 1934525382}
-  - component: {fileID: 1934525381}
   - component: {fileID: 1934525385}
+  - component: {fileID: 1934525381}
   m_Layer: 0
   m_Name: luckee
   m_TagString: Item
@@ -10437,16 +10459,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1934525380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: aea9a77730fcf4a36b95581133c105f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDialogue: []
-  dialogue1: []
-  dialogue2: []
-  dialogue3: []
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - asdf
+  dialogue3:
+  - asdf
+  player: {fileID: 0}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1153696067}
-  player: {fileID: 0}
   dialogueText: {fileID: 1421965431}
   newItem: 1
 --- !u!61 &1934525382
@@ -10811,9 +10837,9 @@ MonoBehaviour:
   - adf
   dialogue3:
   - sfg
+  player: {fileID: 463840863}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 515397706}
-  player: {fileID: 463840863}
   dialogueText: {fileID: 2131735522}
   newItem: 1
 --- !u!61 &1977487364

@@ -2,27 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Luckee : MonoBehaviour
+public class Luckee : ItemDialogue
 {
-    [SerializeField] private string[] firstDialogue;
-    [SerializeField] private string[] dialogue1;
-    [SerializeField] private string[] dialogue2;
-    [SerializeField] private string[] dialogue3;
-
-    private Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    public string[] FirstDialogue()
+    public override string[] FirstDialogue()
     {
         animator.SetBool("isCollided", true);
         return firstDialogue;
     }
 
-    public string[] RandomDialogue()
+    public override string[] RandomDialogue()
     {
         switch (Random.Range(1, 3))
         {
@@ -33,7 +21,7 @@ public class Luckee : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public override void EndDialogue()
     {
         animator.SetBool("isCollided", false);
         animator.SetBool("isThree", true);

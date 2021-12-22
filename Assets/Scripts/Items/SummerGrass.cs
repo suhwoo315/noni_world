@@ -2,24 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SummerGrass : MonoBehaviour
+public class SummerGrass : ItemDialogue
 {
-    [SerializeField] private string[] firstDialogue;
-    [SerializeField] private string[] dialogue1;
-    [SerializeField] private string[] dialogue2;
-    [SerializeField] private string[] dialogue3;
-    [SerializeField] private GameObject player;
-    [SerializeField] private Animator playerAnimator;
-
-    private Animator animator;
     private Vector3 previousPosition;
 
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    public string[] FirstDialogue()
+    public override string[] FirstDialogue()
     {
         previousPosition = player.transform.position;
         player.transform.position = transform.position;
@@ -28,7 +15,7 @@ public class SummerGrass : MonoBehaviour
         return firstDialogue;
     }
 
-    public string[] RandomDialogue()
+    public override string[] RandomDialogue()
     {
         player.transform.position = transform.position;
         playerAnimator.SetBool("isSittingHappy", true);
@@ -41,7 +28,7 @@ public class SummerGrass : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public override void EndDialogue()
     {
         player.transform.position = previousPosition;
         playerAnimator.SetBool("isSittingHappy", false);

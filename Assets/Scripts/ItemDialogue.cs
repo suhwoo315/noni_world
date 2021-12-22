@@ -11,16 +11,16 @@ public class ItemDialogue : MonoBehaviour
     [SerializeField] protected string[] dialogue2;
     [SerializeField] protected string[] dialogue3;
 
-    [SerializeField] private GameManager gameManager;
-    [SerializeField] private GameObject canvas;
-    [SerializeField] private GameObject player;
-    [SerializeField] private Text dialogueText;
+    [SerializeField] protected GameObject player;
+    [SerializeField] protected GameManager gameManager;
+    [SerializeField] protected GameObject canvas;
+    [SerializeField] protected Text dialogueText;
 
     public bool newItem = true;
     protected Animator animator;
     protected Animator playerAnimator;
-    private string[] dialogue;
-    private int line;
+    protected string[] dialogue;
+    protected int line;
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class ItemDialogue : MonoBehaviour
         canvas.SetActive(true);
     }
 
-    public void ItemNextDialogue()
+    public virtual void ItemNextDialogue()
     {
         if (line >= dialogue.Length)
         {
@@ -54,16 +54,6 @@ public class ItemDialogue : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         gameManager.ActivateCollision();
-    }
-
-    public void SignNextDialogue()
-    {
-        if (line >= dialogue.Length)
-        {
-            canvas.SetActive(false);
-            gameManager.ActivateRise();
-        }
-        else dialogueText.text = dialogue[line++];
     }
 
     public virtual string[] FirstDialogue()

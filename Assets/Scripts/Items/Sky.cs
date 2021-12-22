@@ -2,22 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sky : MonoBehaviour
+public class Sky : ItemDialogue
 {
-    [SerializeField] private string[] firstDialogue;
-    [SerializeField] private string[] dialogue1;
-    [SerializeField] private string[] dialogue2;
-    [SerializeField] private string[] dialogue3;
-    [SerializeField] private Animator playerAnimator;
-
-    private Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    public string[] FirstDialogue()
+    public override string[] FirstDialogue()
     {
         animator.SetBool("isCollided", true);
         StartCoroutine(StartWatching());
@@ -31,7 +18,7 @@ public class Sky : MonoBehaviour
         playerAnimator.SetBool("isSky", true);
     }
 
-    public string[] RandomDialogue()
+    public override string[] RandomDialogue()
     {
         switch (Random.Range(1, 3))
         {
@@ -48,7 +35,7 @@ public class Sky : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public override void EndDialogue()
     {
         GetComponent<SpriteRenderer>().enabled = true;
         playerAnimator.SetBool("isSky", false);

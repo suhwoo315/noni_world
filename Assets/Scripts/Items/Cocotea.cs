@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Cocotea : ItemDialogue
 {
-
     public override string[] FirstDialogue()
     {
         animator.SetBool("isCollided", true);

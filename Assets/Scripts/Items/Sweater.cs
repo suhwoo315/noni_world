@@ -2,15 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sweater : MonoBehaviour
+public class Sweater : ItemDialogue
 {
-    [SerializeField] private string[] firstDialogue;
-    [SerializeField] private string[] dialogue1;
-    [SerializeField] private string[] dialogue2;
-    [SerializeField] private string[] dialogue3;
-    [SerializeField] private Animator playerAnimator;
-
-    public string[] FirstDialogue()
+    public override string[] FirstDialogue()
     {
         StartCoroutine(StartWearing());
         return firstDialogue;
@@ -23,7 +17,7 @@ public class Sweater : MonoBehaviour
         playerAnimator.SetBool("isSweater", true);
     }
 
-    public string[] RandomDialogue()
+    public override string[] RandomDialogue()
     {
         switch (Random.Range(1, 3))
         {
@@ -40,7 +34,7 @@ public class Sweater : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public override void EndDialogue()
     {
         GetComponent<SpriteRenderer>().enabled = true;
         playerAnimator.SetBool("isSweater", false);

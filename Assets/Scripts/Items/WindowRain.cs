@@ -2,29 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WindowRain : MonoBehaviour
+public class WindowRain : ItemDialogue
 {
-    [SerializeField] private string[] firstDialogue;
-    [SerializeField] private string[] dialogue1;
-    [SerializeField] private string[] dialogue2;
-    [SerializeField] private string[] dialogue3;
-    [SerializeField] private Animator playerAnimator;
-
-    private Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    public string[] FirstDialogue()
+    public override string[] FirstDialogue()
     {
         playerAnimator.SetBool("isSittingHappy", true);
         animator.SetBool("isCollided", true);
         return firstDialogue;
     }
 
-    public string[] RandomDialogue()
+    public override string[] RandomDialogue()
     {
         playerAnimator.SetBool("isSittingHappy", true);
         animator.SetBool("isCollided", true);
@@ -37,7 +24,7 @@ public class WindowRain : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public override void EndDialogue()
     {
         playerAnimator.SetBool("isSittingHappy", false);
         animator.SetBool("isCollided", false);
