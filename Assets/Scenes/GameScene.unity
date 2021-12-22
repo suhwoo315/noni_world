@@ -167,6 +167,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1490666698}
   dialogueText: {fileID: 1923298061}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &6120221
 PolygonCollider2D:
@@ -825,6 +826,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 376234252}
   dialogueText: {fileID: 543375933}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &228624485
 PolygonCollider2D:
@@ -1277,6 +1279,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1375200397}
   dialogueText: {fileID: 2094674299}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &333587794
 PolygonCollider2D:
@@ -1938,6 +1941,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 673326689}
   dialogueText: {fileID: 1242691561}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &434805423
 PolygonCollider2D:
@@ -2261,6 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abyss: {fileID: 1352967176}
   gameManager: {fileID: 45547545}
+  soundManager: {fileID: 642268971}
   moveMode: 0
   fallMode: 0
   riseMode: 0
@@ -2381,6 +2386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 45547545}
+  soundManager: {fileID: 642268971}
   collideMode: 0
 --- !u!95 &463840872
 Animator:
@@ -2928,6 +2934,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1503280127}
   dialogueText: {fileID: 1289481917}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &544912922
 PolygonCollider2D:
@@ -8156,6 +8163,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 929915840}
   dialogueText: {fileID: 1809393426}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!95 &627555505
 Animator:
@@ -8265,6 +8273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642268969}
   - component: {fileID: 642268970}
+  - component: {fileID: 642268972}
   - component: {fileID: 642268971}
   m_Layer: 0
   m_Name: Sound Manager
@@ -8298,7 +8307,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5d0a3d17c347e46409e335fc9d42a0a0, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -8395,11 +8404,109 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611ab3401550d4abe82d20bca12d22d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rainbow_1: {fileID: 0}
-  rainbow_2: {fileID: 0}
-  floating: {fileID: 0}
-  happy_1: {fileID: 0}
-  happy_2: {fileID: 0}
+  rainbow_1: {fileID: 8300000, guid: 5d0a3d17c347e46409e335fc9d42a0a0, type: 3}
+  rainbow_2: {fileID: 8300000, guid: 01e32e56702c3421784d133416453e44, type: 3}
+  floating: {fileID: 8300000, guid: 21cc1f23d4574499bbd9a6609e238369, type: 3}
+  happy_1: {fileID: 8300000, guid: 9a6c626ad9c1244eebd47b72c5275c94, type: 3}
+  happy_2: {fileID: 8300000, guid: 6f141385fe2ab4c4fb021492993790d8, type: 3}
+  bpm: 0
+  numBeatsPerSegment: 0
+--- !u!82 &642268972
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642268968}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 01e32e56702c3421784d133416453e44, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &673326689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,6 +8832,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1324041446}
   dialogueText: {fileID: 1679661714}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &814517733
 PolygonCollider2D:
@@ -9018,6 +9126,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1544350428}
   dialogueText: {fileID: 1301444541}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &880260168
 PolygonCollider2D:
@@ -13934,6 +14043,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 946550413}
   dialogueText: {fileID: 758810485}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &891842583
 PolygonCollider2D:
@@ -14228,6 +14338,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2002037223}
   dialogueText: {fileID: 1611013927}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &922191369
 PolygonCollider2D:
@@ -15017,6 +15128,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 496701647}
   dialogueText: {fileID: 1536327643}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1041400063
 PolygonCollider2D:
@@ -15370,6 +15482,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 439244491}
   dialogueText: {fileID: 255938623}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1128055568
 PolygonCollider2D:
@@ -17729,6 +17842,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2074747607}
   dialogueText: {fileID: 250608862}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1405702845
 PolygonCollider2D:
@@ -18235,6 +18349,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1362327643}
   dialogueText: {fileID: 1350653884}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1494425525
 PolygonCollider2D:
@@ -19144,6 +19259,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1705083344}
   dialogueText: {fileID: 1750606128}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!95 &1639188399
 Animator:
@@ -19611,6 +19727,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 759251653}
   dialogueText: {fileID: 1352401833}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1781160494
 PolygonCollider2D:
@@ -20123,6 +20240,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1153696067}
   dialogueText: {fileID: 1421965431}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1934525382
 PolygonCollider2D:
@@ -20496,6 +20614,7 @@ MonoBehaviour:
   gameManager: {fileID: 45547545}
   canvas: {fileID: 515397706}
   dialogueText: {fileID: 2131735522}
+  soundManager: {fileID: 642268971}
   newItem: 1
 --- !u!60 &1977487364
 PolygonCollider2D:

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SoundManager soundManager;
 
     public bool collideMode = false;
 
@@ -12,6 +13,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collideMode)
         {
+            soundManager.ActivateSound3();
             collideMode = false;
             gameManager.DeactivateMove();
             if (collision.gameObject.GetComponent<ItemDialogue>().newItem) gameManager.IncreaseCurrentHP();

@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private GameObject abyss;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SoundManager soundManager;
 
     public bool moveMode = false;
     public bool fallMode = false;
@@ -45,10 +46,6 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y < downLimit) transform.position = new Vector2(transform.position.x, upLimit);
             else if (transform.position.y > upLimit) transform.position = new Vector2(transform.position.x, downLimit);
         }
-        
-        // Debug.Log("horizontal : " + horizontal + "     vertical : " + vertical);
-        // horizontal : -1 (left) ~ 1 (right)
-        // vertical : -1 (down) ~ 1 (up)
 
         if (fallMode)
         {
@@ -68,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
                 gameManager.ActivateCollision();
                 gameManager.ShowGalaxies();
                 gameManager.RevealItems();
+                if (gameManager.stage != 1 || gameManager.round != 1) soundManager.ActivateSound2();
             }
         }
 
@@ -86,12 +84,14 @@ public class PlayerMovement : MonoBehaviour
                 playerRigidbody.velocity = new Vector2(0, 0);
                 riseMode = false;
                 gameManager.ActivateTouch();
+                soundManager.ActivateSound1();
             }
         }
     }
 
     IEnumerator StartRotation()
     {
+        soundManager.Mute();
         animator.SetBool("isFalling", true);
         yield return new WaitForSeconds(1.0f);
     }

@@ -16,6 +16,8 @@ public class ItemDialogue : MonoBehaviour
     [SerializeField] protected GameObject canvas;
     [SerializeField] protected Text dialogueText;
 
+    [SerializeField] private SoundManager soundManager;
+
     public bool newItem = true;
     protected Animator animator;
     protected Animator playerAnimator;
@@ -41,6 +43,7 @@ public class ItemDialogue : MonoBehaviour
     {
         if (line >= dialogue.Length)
         {
+            soundManager.ActivateSound2();
             EndDialogue();
             newItem = false;
             canvas.SetActive(false);
