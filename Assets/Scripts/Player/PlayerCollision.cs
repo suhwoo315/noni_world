@@ -16,7 +16,7 @@ public class PlayerCollision : MonoBehaviour
             soundManager.ActivateSound3();
             collideMode = false;
             gameManager.DeactivateMove();
-            if (collision.gameObject.GetComponent<ItemDialogue>().newItem) gameManager.IncreaseCurrentHP();
+            if (collision.gameObject.GetComponent<ItemDialogue>().newItem) gameManager.IncreaseCurrentHP(collision.gameObject.name);
             gameManager.ShowGalaxies();
             collision.gameObject.GetComponent<ItemDialogue>().ShowDialogue();
         }

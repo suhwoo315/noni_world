@@ -11,16 +11,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Camera mainCamera;
 
     public int stage = 0;
-    public int round = 1;
+    public int round = 1;public string[] collectedItems;
 
     private int targetHP;
     private int currentHP = 0;
     private int itemsLeft = 17; // except finish sign
     private Animator playerAnimator;
-
+    
     void Start()
     {
         playerAnimator = player.transform.GetChild(0).GetComponent<Animator>();
+        collectedItems = new string[17];
     }
 
     public void ActivateTouch()
@@ -109,11 +110,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void IncreaseCurrentHP()
+    public void IncreaseCurrentHP(string name)
     {
         if (stage == 5) return;
         itemsLeft--;
         currentHP++;
+        for(int i=0; i<collectedItems.Length; i++)
+        {
+            if (collectedItems[i] == null) collectedItems[i] = name;
+        }
     }
 
     public bool CheckGameState()

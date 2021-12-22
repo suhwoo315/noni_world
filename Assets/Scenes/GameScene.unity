@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 6120220}
   - component: {fileID: 6120221}
   m_Layer: 0
-  m_Name: huggle cuddle
+  m_Name: huggle-cuddle
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,6 +359,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420031}
   stage: 0
   round: 1
+  collectedItems: []
 --- !u!1 &52864146
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1128,7 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1394,8 +1395,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdg
-  - sdg
+  - waaaaazzzzzaaaaa!!!
+  - me antonio preobrazhensky
+  - proud and confident!
+  - unique and fantastic!
+  - hey green friend,
+  - do you think i'm weird?
+  - yessssaaaaa!!!
+  - i am weird!!!
+  - but weird is what makes me
+  - antonio preobrazhensky!!!
+  - i let my soul sing and dance
+  - to the music of my heart
+  - how weird but romantic!!!
+  - waaaaazzzzaaaaapppp
+  - green friend!!!
+  - come join me
+  - let's be weird and beautiful!!!
   dialogue1:
   - df
   - as
@@ -2828,7 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2973,11 +2989,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - a new bottle of body lotion
+  - '[ pop! ]'
+  - hmm... smells like
+  - cotton candy!
   dialogue1:
-  - adf
+  - a secret nobody knows
+  - '[ this is made out of'
+  - real cotton candy ]
   dialogue2:
-  - asdf
+  - apply it gently on your skin
+  - because
+  - you are a lovely baby
   dialogue3:
   - af
   player: {fileID: 1463886587}
@@ -8086,14 +8109,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - oh yeah cocotea
-  - i love it!
+  - a warm cup of coco tea
+  - sweet and cosy
   dialogue1:
-  - test
-  - testest
+  - bubbles
+  - bubbles...
+  - is it the secret to coco tea's
+  - ecstatic taste??!!
   dialogue2:
-  - adad
-  - dsgdg
+  - fortune tellers say
+  - you can read coco tea cup
+  - hmm.. what does it say?
+  - '[ you are cute! ]'
   dialogue3:
   - asdf
   - dgh
@@ -8547,7 +8574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14720,7 +14747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15545,7 +15572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15626,13 +15653,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - cattodoggo, a lovely creature
+  - furry and puffy
   dialogue1:
-  - asdf
+  - it is scientifically proven
+  - that dancing with cattodoggo
+  - .
+  - ..
+  - ...
+  - makes you smile
   dialogue2:
   - asf
   dialogue3:
-  - asdf
+  - cattodoggo wants to say something
+  - '[ woff woff ]'
+  - '[ wooooof!! ]'
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 760867523}
@@ -16805,9 +16840,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - hellllooouuu
+  - are you lost?
+  - ...
+  - me too!
+  - ...
+  - but it's fine, little fellooowww
+  - after all isn't that beauty of life?
+  - follow the wind,
+  - you'll find the sky
+  - follow the river,
+  - you'll find the sea
+  - let your soul be freeeeee
   dialogue1:
-  - asdf
+  - helloouu little felloooww
+  - have you taken a thoroughly
+  - free-spirited tour in this space?
+  - i've been wandering for
+  - quite a long time
+  - and found many interesting
+  - stuffs in this space...
+  - unexpected encounters!
+  - what a fun indeed!
   dialogue2:
   - asdf
   dialogue3:
@@ -17121,7 +17175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17278,45 +17332,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66e7274a0a884a17bba2314cfc70179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue0:
+  - hi
+  - i'm noni
+  dialogue1:
+  - ...
+  - sometimes i feel like
+  - i'm falling into an endless
+  - a
+  - ab
+  - aby
+  - abys
+  - abyss
+  - abyss.
+  - abyss..
+  - abyss...
+  dialogue2:
+  - ...
+  - sometimes i feel like
+  - i'm falling into an endless abyss
+  - ...
+  - 
+  dialogue3:
+  - ...
+  - sometimes i feel like
+  - i'm falling into an endless abyss
+  - .
+  - ..
+  - ...
+  - but it's okay
+  dialogue4:
+  - hi friend
+  - thank you
+  - 
+  - you can always come back
+  - just chill...
+  - floating in abyss with me,
+  - you know
+  - may your abyss be filled with
+  - beautiful stars
+  dialogue5:
+  - 
+  dialogue6:
+  - ...
+  - now i feel much better
   gameManager: {fileID: 45547545}
   canvas: {fileID: 341990331}
   dialogueText: {fileID: 1083269232}
-  dialogueInfo:
-    dialogue0:
-    - hi
-    - i'm noni
-    dialogue1:
-    - ...
-    - sometimes i feel like i'm falling into an endless
-    - a
-    - ab
-    - aby
-    - abys
-    - abyss
-    - abyss...
-    dialogue2:
-    - ...
-    - sometimes i feel like i'm falling into an endless abyss
-    - ...
-    - i like coco tea
-    dialogue3:
-    - ...
-    - sometimes i feel like i'm falling into an endless abyss
-    - ...
-    - but it's okay
-    dialogue4:
-    - ending blah blah
-    - ending blah blah
-    dialogue5:
-    - hi
-    - you've come back
-    - you can explore our little galaxy
-    - whenever you feel better
-    - bump into the sign
-    - happy voyage!
-    dialogue6:
-    - ...
-    - now i feel much better
 --- !u!114 &1463886590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18540,7 +18602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19183,7 +19245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19470,7 +19532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20389,7 +20451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20682,7 +20744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20941,7 +21003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

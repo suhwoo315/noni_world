@@ -21,12 +21,7 @@ public class PlayerTouch : MonoBehaviour
     {
         if (touchMode)
         {
-            if (gameManager.stage == 4)
-            {
-                touchMode = false;
-                StartCoroutine(ShowEnding());
-            }
-            if (touchNumber > 4)
+            if (touchNumber > 4 || gameManager.stage == 4)
             {
                 touchMode = false;
                 GetComponent<PlayerDialogue>().ShowDialogue(false);
@@ -42,11 +37,5 @@ public class PlayerTouch : MonoBehaviour
                 }
             }
         }
-    }
-
-    IEnumerator ShowEnding()
-    {
-        yield return new WaitForSeconds(2.0f);
-        GetComponent<PlayerDialogue>().ShowDialogue(false);
     }
 }
