@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject abyss;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private SoundManager soundManager;
+    [SerializeField] private Camera mainCamera;
 
     public bool moveMode = false;
     public bool fallMode = false;
@@ -67,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
                 gameManager.ShowGalaxies();
                 gameManager.RevealItems();
                 if (gameManager.stage != 1 || gameManager.round != 1) soundManager.ActivateSound2();
+                else mainCamera.GetComponent<CameraMovement>().enabled = false;
             }
         }
 
@@ -79,6 +81,8 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y > -5) playerRigidbody.gravityScale = -0.2f;
             if (transform.position.y >= 0)
             {
+                if (Camera.main.WorldToScreenPoint(transform.position).x > Screen.width * 0.5f) transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+                else transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
                 animator.SetBool("isFalling", false);
                 animator.SetBool("isGalaxy", false);
                 playerRigidbody.gravityScale = 0f;

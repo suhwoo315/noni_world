@@ -356,6 +356,7 @@ MonoBehaviour:
   - {fileID: 291148831}
   - {fileID: 408676482}
   - {fileID: 2086402675}
+  mainCamera: {fileID: 519420031}
   stage: 0
   round: 1
 --- !u!1 &52864146
@@ -17346,6 +17347,7 @@ MonoBehaviour:
   abyss: {fileID: 1352967176}
   gameManager: {fileID: 45547545}
   soundManager: {fileID: 642268971}
+  mainCamera: {fileID: 519420031}
   moveMode: 0
   fallMode: 0
   riseMode: 0

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject[] items;
     [SerializeField] private GameObject[] galaxies;
+    [SerializeField] private Camera mainCamera;
 
     public int stage = 0;
     public int round = 1;
@@ -201,6 +202,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(7.0f);
         items[0].SetActive(true);
+        mainCamera.GetComponent<CameraMovement>().enabled = true;
         yield return new WaitUntil(() => (itemsLeft == 16 && player.GetComponent<PlayerCollision>().collideMode == true));
         items[1].SetActive(true);
         yield return new WaitForSeconds(1.0f);

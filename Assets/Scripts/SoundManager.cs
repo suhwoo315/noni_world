@@ -32,7 +32,7 @@ public class SoundManager : MonoBehaviour
     IEnumerator ContinueSound1()
     {
         yield return new WaitUntil(() => (AudioSettings.dspTime + 1.0f > nextEventTime));
-        if (audioSource[0].clip == rainbow_1)
+        if (audioSource[0].clip == rainbow_1 && audioSource[0].isPlaying)
         {
             audioSource[1].clip = rainbow_2;
             audioSource[1].PlayScheduled(nextEventTime);
@@ -61,7 +61,7 @@ public class SoundManager : MonoBehaviour
     IEnumerator ContinueSound3()
     {
         yield return new WaitUntil(() => (AudioSettings.dspTime + 1.0f > nextEventTime));
-        if (audioSource[0].clip == happy_1)
+        if (audioSource[0].clip == happy_1 && audioSource[0].isPlaying)
         {
             audioSource[1].clip = happy_2;
             audioSource[1].loop = true;

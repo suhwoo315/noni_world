@@ -6,16 +6,14 @@ public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private GameObject player;
 
-    private Vector2 playerPosition;
     private float leftLimit;
     private float rightLimit;
     private float downLimit;
     private float upLimit;
 
-    private Rigidbody2D cameraRigidbody;
-    private float horizontal;
-    private float vertical;
-    private float speed = 3.0f;
+    private Vector2 screenPlayerPosition;
+    private Vector3 previousPlayerPosition;
+    private Vector3 direction;
 
     void Start()
     {
@@ -23,29 +21,21 @@ public class CameraMovement : MonoBehaviour
         rightLimit = Screen.width - leftLimit;
         downLimit = Screen.height * 0.5f * 0.6f;
         upLimit = Screen.height - downLimit;
-        cameraRigidbody = GetComponent<Rigidbody2D>();
+
+        previousPlayerPosition = player.transform.position;
     }
 
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-
-        /*
-        playerPosition = Camera.main.WorldToScreenPoint(player.transform.position);
+        screenPlayerPosition = Camera.main.WorldToScreenPoint(player.transform.position);
         
-        if (playerPosition.x < leftLimit || playerPosition.x > rightLimit ||
-            playerPosition.y < downLimit || playerPosition.y > upLimit)
+        if (screenPlayerPosition.x < leftLimit || screenPlayerPosition.x > rightLimit ||
+            screenPlayerPosition.y < downLimit || screenPlayerPosition.y > upLimit)
         {
-            horizontal = Input.acceleration.x;
-            vertical = Input.acceleration.y;
-            cameraRigidbody.velocity = new Vector2(horizontal * speed, vertical * speed);
-
-            Vector3 targetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-            transform.position = targetPos;
+            direction = player.transform.position - previousPlayerPosition;
+            transform.position += direction;
         }
-        else
-        {
-            //cameraRigidbody.velocity = new Vector2(0, 0);
-        }*/
+
+        previousPlayerPosition = player.transform.position;
     }
 }
