@@ -9,6 +9,7 @@ public class SummerGrass : ItemDialogue
     public override string[] FirstDialogue()
     {
         previousPosition = player.transform.position;
+        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         player.transform.position = transform.position;
         playerAnimator.SetBool("isSittingHappy", true);
         animator.SetBool("isCollided", true);
@@ -31,6 +32,7 @@ public class SummerGrass : ItemDialogue
     public override void EndDialogue()
     {
         player.transform.position = previousPosition;
+        player.transform.localScale = Vector3.one;
         playerAnimator.SetBool("isSittingHappy", false);
         animator.SetBool("isCollided", false);
         animator.SetBool("isBug", false);

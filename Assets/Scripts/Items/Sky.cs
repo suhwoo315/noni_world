@@ -6,7 +6,6 @@ public class Sky : ItemDialogue
 {
     public override string[] FirstDialogue()
     {
-        animator.SetBool("isCollided", true);
         StartCoroutine(StartWatching());
         return firstDialogue;
     }

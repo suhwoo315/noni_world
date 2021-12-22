@@ -24,7 +24,7 @@ public class Luckee : ItemDialogue
     public override void EndDialogue()
     {
         animator.SetBool("isCollided", false);
-        animator.SetBool("isThree", true);
-        animator.SetBool("isFour", true);
+        animator.SetBool("isThree", false);
+        animator.SetBool("isFour", false);
     }
 }
