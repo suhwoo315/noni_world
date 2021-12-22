@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (fallMode)
         {
+            playerRigidbody.freezeRotation = false;
             StartCoroutine(StartRotation());
             playerRigidbody.gravityScale = 0.2f;
             if (transform.position.y < -5) playerRigidbody.gravityScale = 1.0f;
@@ -82,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("isGalaxy", false);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
+                transform.rotation = Quaternion.identity;
+                playerRigidbody.freezeRotation = true;
                 riseMode = false;
                 gameManager.ActivateTouch();
                 soundManager.ActivateSound1();
