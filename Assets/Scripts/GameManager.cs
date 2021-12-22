@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject player;
+    [SerializeField] private Animator playerAnimator;
     [SerializeField] private GameObject[] items;
     [SerializeField] private GameObject[] galaxies;
 
@@ -112,6 +113,7 @@ public class GameManager : MonoBehaviour
     public bool CheckGameState()
     {
         bool roundCleared = false;
+        if (currentHP >= targetHP / 2) playerAnimator.SetBool("isOkay", true);
         if (currentHP >= targetHP)
         {
             roundCleared = true;

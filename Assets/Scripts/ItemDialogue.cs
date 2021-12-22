@@ -9,6 +9,7 @@ public class ItemDialogue : MonoBehaviour
     [SerializeField] private GameObject canvas;
     [SerializeField] private Text dialogueText;
     [SerializeField] private DialogueInfo dialogueInfo;
+    [SerializeField] private Animator playerAnimator;
 
     public bool newItem = true;
 
@@ -40,6 +41,7 @@ public class ItemDialogue : MonoBehaviour
     {
         if (line >= dialogue.Length)
         {
+            //playerAnimator.SetBool();
             newItem = false;
             canvas.SetActive(false);
             gameManager.ActivateMove();

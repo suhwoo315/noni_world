@@ -23,13 +23,17 @@ public class PlayerDialogue : MonoBehaviour
 
     public void ShowDialogue(bool roundCleared)
     {
-        animator.SetBool("isTalking", true);
         this.roundCleared = roundCleared;
         line = 0;
         stage = gameManager.stage;
-        if (roundCleared) dialogue = dialogueInfo.dialogue6;
+        if (roundCleared)
+        {
+            animator.SetBool("isHappy", true);
+            dialogue = dialogueInfo.dialogue6;
+        }
         else
         {
+            animator.SetBool("isTalking", true);
             switch (stage)
             {
                 case 0: dialogue = dialogueInfo.dialogue0; break;
@@ -52,6 +56,7 @@ public class PlayerDialogue : MonoBehaviour
             canvas.SetActive(false);
             GetComponent<PlayerTouch>().touchNumber = 0;
             animator.SetBool("isTalking", false);
+            animator.SetBool("isHappy", false);
             if (roundCleared)
             {
                 gameManager.ActivateRise();
