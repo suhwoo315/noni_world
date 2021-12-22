@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        playerAnimator = player.GetComponent<Animator>();
+        playerAnimator = player.transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void ActivateTouch()

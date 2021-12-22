@@ -42,9 +42,10 @@ public class SoundManager : MonoBehaviour
     public void ActivateSound2()
     {
         Mute();
+        nextEventTime = AudioSettings.dspTime + 1.5f;
         audioSource[0].clip = floating;
         audioSource[0].loop = true;
-        audioSource[0].Play();
+        audioSource[0].PlayScheduled(nextEventTime);
     }
 
     public void ActivateSound3()

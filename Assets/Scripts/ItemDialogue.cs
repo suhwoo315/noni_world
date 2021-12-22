@@ -27,7 +27,7 @@ public class ItemDialogue : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerAnimator = player.GetComponent<Animator>();
+        playerAnimator = player.transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void ShowDialogue()

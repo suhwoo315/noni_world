@@ -18,7 +18,7 @@ public class PlayerDialogue : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void ShowDialogue(bool roundCleared)

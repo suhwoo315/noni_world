@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
         rightLimit = abyss.GetComponent<SpriteRenderer>().bounds.extents.x;
         leftLimit = -rightLimit;
         downLimit = abyss.transform.position.y - abyss.GetComponent<SpriteRenderer>().bounds.extents.y;

@@ -14,7 +14,7 @@ public class PlayerTouch : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update()

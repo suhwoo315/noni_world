@@ -163,7 +163,7 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - asdf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1490666698}
   dialogueText: {fileID: 1923298061}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afad0c46468df4ac3afef1f1b45629d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   items:
   - {fileID: 627555500}
   - {fileID: 544912920}
@@ -822,7 +822,7 @@ MonoBehaviour:
   - sdfg
   dialogue3:
   - dgf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 376234252}
   dialogueText: {fileID: 543375933}
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   dialogue3:
   - fgh
   - as
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1375200397}
   dialogueText: {fileID: 2094674299}
@@ -1937,7 +1937,7 @@ MonoBehaviour:
   - xcvb
   dialogue3:
   - qew
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 673326689}
   dialogueText: {fileID: 1242691561}
@@ -2171,15 +2171,9 @@ GameObject:
   m_Component:
   - component: {fileID: 463840865}
   - component: {fileID: 463840864}
-  - component: {fileID: 463840868}
-  - component: {fileID: 463840867}
   - component: {fileID: 463840872}
-  - component: {fileID: 463840869}
-  - component: {fileID: 463840866}
-  - component: {fileID: 463840871}
-  - component: {fileID: 463840870}
   m_Layer: 0
-  m_Name: Player
+  m_Name: noni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2243,151 +2237,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463840863}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 341990332}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1463886588}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &463840866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f67d87ca4794a2998b0ac2ec74c0ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abyss: {fileID: 1352967176}
-  gameManager: {fileID: 45547545}
-  soundManager: {fileID: 642268971}
-  moveMode: 0
-  fallMode: 0
-  riseMode: 0
---- !u!50 &463840867
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &463840868
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &463840869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb6c3bc7553cd43e6947e26b5f7c4213, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 341990331}
-  gameManager: {fileID: 45547545}
-  touchMode: 1
-  touchNumber: 0
---- !u!114 &463840870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f66e7274a0a884a17bba2314cfc70179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 45547545}
-  canvas: {fileID: 341990331}
-  dialogueText: {fileID: 1083269232}
-  dialogueInfo:
-    dialogue0:
-    - hi
-    - i'm noni
-    dialogue1:
-    - ...
-    - sometimes i feel like i'm falling into an endless
-    - a
-    - ab
-    - aby
-    - abys
-    - abyss
-    - abyss...
-    dialogue2:
-    - ...
-    - sometimes i feel like i'm falling into an endless abyss
-    - ...
-    - i like coco tea
-    dialogue3:
-    - ...
-    - sometimes i feel like i'm falling into an endless abyss
-    - ...
-    - but it's okay
-    dialogue4:
-    - ending blah blah
-    - ending blah blah
-    dialogue5:
-    - hi
-    - you've come back
-    - you can explore our little galaxy
-    - whenever you feel better
-    - bump into the sign
-    - happy voyage!
-    dialogue6:
-    - ...
-    - now i feel much better
---- !u!114 &463840871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463840863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f5c5be70bc24c498039422d4e8db1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 45547545}
-  soundManager: {fileID: 642268971}
-  collideMode: 0
 --- !u!95 &463840872
 Animator:
   serializedVersion: 3
@@ -2649,7 +2506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89c3782fb57a4db4acc47c83fab2b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2930,7 +2787,7 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - af
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1503280127}
   dialogueText: {fileID: 1289481917}
@@ -8159,7 +8016,7 @@ MonoBehaviour:
   dialogue3:
   - asdf
   - dgh
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 929915840}
   dialogueText: {fileID: 1809393426}
@@ -8409,8 +8266,6 @@ MonoBehaviour:
   floating: {fileID: 8300000, guid: 21cc1f23d4574499bbd9a6609e238369, type: 3}
   happy_1: {fileID: 8300000, guid: 9a6c626ad9c1244eebd47b72c5275c94, type: 3}
   happy_2: {fileID: 8300000, guid: 6f141385fe2ab4c4fb021492993790d8, type: 3}
-  bpm: 0
-  numBeatsPerSegment: 0
 --- !u!82 &642268972
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8828,7 +8683,7 @@ MonoBehaviour:
   - zcv
   dialogue3:
   - wer
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1324041446}
   dialogueText: {fileID: 1679661714}
@@ -9122,7 +8977,7 @@ MonoBehaviour:
   - vd
   dialogue3:
   - jyg
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1544350428}
   dialogueText: {fileID: 1301444541}
@@ -14039,7 +13894,7 @@ MonoBehaviour:
   - dfg
   dialogue3:
   - sdfg
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 946550413}
   dialogueText: {fileID: 758810485}
@@ -14334,7 +14189,7 @@ MonoBehaviour:
   - sdfg
   dialogue3:
   - er
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2002037223}
   dialogueText: {fileID: 1611013927}
@@ -15124,7 +14979,7 @@ MonoBehaviour:
   - zxcv
   dialogue3:
   - tyui
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 496701647}
   dialogueText: {fileID: 1536327643}
@@ -15478,7 +15333,7 @@ MonoBehaviour:
   - asf
   dialogue3:
   - asdf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 439244491}
   dialogueText: {fileID: 255938623}
@@ -16245,8 +16100,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463840870}
-        m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
+      - m_Target: {fileID: 1463886589}
+        m_TargetAssemblyTypeName: PlayerDialogue, Assembly-CSharp
         m_MethodName: PlayerNextDialogue
         m_Mode: 1
         m_Arguments:
@@ -17838,7 +17693,7 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - adsf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2074747607}
   dialogueText: {fileID: 250608862}
@@ -18122,6 +17977,180 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434928412}
   m_CullTransparentMesh: 1
+--- !u!1 &1463886587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463886588}
+  - component: {fileID: 1463886592}
+  - component: {fileID: 1463886591}
+  - component: {fileID: 1463886590}
+  - component: {fileID: 1463886589}
+  - component: {fileID: 1463886594}
+  - component: {fileID: 1463886593}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463886588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 463840865}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463886589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66e7274a0a884a17bba2314cfc70179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 45547545}
+  canvas: {fileID: 341990331}
+  dialogueText: {fileID: 1083269232}
+  dialogueInfo:
+    dialogue0:
+    - hi
+    - i'm noni
+    dialogue1:
+    - ...
+    - sometimes i feel like i'm falling into an endless
+    - a
+    - ab
+    - aby
+    - abys
+    - abyss
+    - abyss...
+    dialogue2:
+    - ...
+    - sometimes i feel like i'm falling into an endless abyss
+    - ...
+    - i like coco tea
+    dialogue3:
+    - ...
+    - sometimes i feel like i'm falling into an endless abyss
+    - ...
+    - but it's okay
+    dialogue4:
+    - ending blah blah
+    - ending blah blah
+    dialogue5:
+    - hi
+    - you've come back
+    - you can explore our little galaxy
+    - whenever you feel better
+    - bump into the sign
+    - happy voyage!
+    dialogue6:
+    - ...
+    - now i feel much better
+--- !u!114 &1463886590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f5c5be70bc24c498039422d4e8db1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 45547545}
+  soundManager: {fileID: 642268971}
+  collideMode: 0
+--- !u!114 &1463886591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f67d87ca4794a2998b0ac2ec74c0ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abyss: {fileID: 1352967176}
+  gameManager: {fileID: 45547545}
+  soundManager: {fileID: 642268971}
+  moveMode: 0
+  fallMode: 0
+  riseMode: 0
+--- !u!114 &1463886592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6c3bc7553cd43e6947e26b5f7c4213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 341990331}
+  gameManager: {fileID: 45547545}
+  touchMode: 1
+  touchNumber: 0
+--- !u!50 &1463886593
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &1463886594
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463886587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1467030267
 GameObject:
   m_ObjectHideFlags: 0
@@ -18345,7 +18374,7 @@ MonoBehaviour:
   - dfg
   dialogue3:
   - cv
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1362327643}
   dialogueText: {fileID: 1350653884}
@@ -19255,7 +19284,7 @@ MonoBehaviour:
   dialogue1: []
   dialogue2: []
   dialogue3: []
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1705083344}
   dialogueText: {fileID: 1750606128}
@@ -19723,7 +19752,7 @@ MonoBehaviour:
   - adf
   dialogue3:
   - asdf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 759251653}
   dialogueText: {fileID: 1352401833}
@@ -20236,7 +20265,7 @@ MonoBehaviour:
   - asdf
   dialogue3:
   - asdf
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1153696067}
   dialogueText: {fileID: 1421965431}
@@ -20610,7 +20639,7 @@ MonoBehaviour:
   - adf
   dialogue3:
   - sfg
-  player: {fileID: 463840863}
+  player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 515397706}
   dialogueText: {fileID: 2131735522}
