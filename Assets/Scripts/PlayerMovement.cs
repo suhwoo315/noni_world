@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public bool riseMode = false;
 
     private Rigidbody2D playerRigidbody;
+    private Animator animator;
     private float horizontal;
     private float vertical;
     private float speed = 3.0f;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         rightLimit = abyss.GetComponent<SpriteRenderer>().bounds.extents.x;
         leftLimit = -rightLimit;
         downLimit = abyss.transform.position.y - abyss.GetComponent<SpriteRenderer>().bounds.extents.y;
@@ -56,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y < -20) playerRigidbody.gravityScale = 0.2f;
             if (transform.position.y <= -30)
             {
+                animator.SetBool("isFalling", false);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 fallMode = false;
@@ -76,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y > -5) playerRigidbody.gravityScale = -0.2f;
             if (transform.position.y >= 0)
             {
+                animator.SetBool("isFalling", false);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 riseMode = false;
@@ -86,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator StartRotation()
     {
-        // rotation animation
+        animator.SetBool("isFalling", true);
         yield return new WaitForSeconds(1.0f);
     }
 }

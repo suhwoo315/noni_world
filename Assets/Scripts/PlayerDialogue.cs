@@ -14,9 +14,16 @@ public class PlayerDialogue : MonoBehaviour
     private int stage;
     private int line;
     private bool roundCleared;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void ShowDialogue(bool roundCleared)
     {
+        animator.SetBool("isTalking", true);
         this.roundCleared = roundCleared;
         line = 0;
         stage = gameManager.stage;
@@ -44,9 +51,9 @@ public class PlayerDialogue : MonoBehaviour
         {
             canvas.SetActive(false);
             GetComponent<PlayerTouch>().touchNumber = 0;
+            animator.SetBool("isTalking", false);
             if (roundCleared)
             {
-                canvas.SetActive(false);
                 gameManager.ActivateRise();
                 gameManager.DeactivateCollider();
             }

@@ -10,6 +10,13 @@ public class PlayerTouch : MonoBehaviour
     public bool touchMode = true;
     public int touchNumber = 0;
 
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (touchMode)
@@ -19,16 +26,20 @@ public class PlayerTouch : MonoBehaviour
                 touchMode = false;
                 StartCoroutine(ShowEnding());
             }
+            if (touchNumber > 4)
+            {
+                touchMode = false;
+                GetComponent<PlayerDialogue>().ShowDialogue(false);
+            }
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
-                if(touch.phase == TouchPhase.Ended) touchNumber++;
-                if (touchNumber > 4)
+                if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved) animator.SetBool("isBending", true);
+                if (touch.phase == TouchPhase.Ended)
                 {
-                    touchMode = false;
-                    GetComponent<PlayerDialogue>().ShowDialogue(false);
+                    animator.SetBool("isBending", false);
+                    touchNumber++;
                 }
-                // else => play animation
             }
         }
     }
