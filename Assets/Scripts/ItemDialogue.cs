@@ -5,34 +5,34 @@ using UnityEngine.UI;
 
 public class ItemDialogue : MonoBehaviour
 {
+    [Header("Dialogue")]
+    [SerializeField] protected string[] firstDialogue;
+    [SerializeField] protected string[] dialogue1;
+    [SerializeField] protected string[] dialogue2;
+    [SerializeField] protected string[] dialogue3;
+
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject player;
     [SerializeField] private Text dialogueText;
-    [SerializeField] private DialogueInfo dialogueInfo;
-    [SerializeField] private Animator playerAnimator;
 
     public bool newItem = true;
-
+    protected Animator animator;
+    protected Animator playerAnimator;
     private string[] dialogue;
     private int line;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        playerAnimator = player.GetComponent<Animator>();
+    }
 
     public void ShowDialogue()
     {
         line = 0;
-        if (newItem) dialogue = dialogueInfo.dialogue0;
-        else
-        {
-            switch (Random.Range(1, 7))
-            {
-                case 1: dialogue = dialogueInfo.dialogue1; break;
-                case 2: dialogue = dialogueInfo.dialogue2; break;
-                case 3: dialogue = dialogueInfo.dialogue3; break;
-                case 4: dialogue = dialogueInfo.dialogue4; break;
-                case 5: dialogue = dialogueInfo.dialogue5; break;
-                case 6:
-                default: dialogue = dialogueInfo.dialogue6; break;
-            }
-        }
+        if (newItem) dialogue = FirstDialogue();
+        else dialogue = RandomDialogue();
         dialogueText.text = dialogue[line++];
         canvas.SetActive(true);
     }
@@ -41,7 +41,7 @@ public class ItemDialogue : MonoBehaviour
     {
         if (line >= dialogue.Length)
         {
-            //playerAnimator.SetBool();
+            EndDialogue();
             newItem = false;
             canvas.SetActive(false);
             gameManager.ActivateMove();
@@ -65,7 +65,19 @@ public class ItemDialogue : MonoBehaviour
         }
         else dialogueText.text = dialogue[line++];
     }
-}
 
-// write code for when level is higher than number of dialogues
-// maybe use random dialogue..?
+    public virtual string[] FirstDialogue()
+    {
+        return null;
+    }
+
+    public virtual string[] RandomDialogue()
+    {
+        return null;
+    }
+
+    public virtual void EndDialogue()
+    {
+
+    }
+}

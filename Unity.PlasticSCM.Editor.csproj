@@ -299,8 +299,8 @@
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\CreateRepositoryDialog.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Views\FileSystemOperation.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\UI\Images.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Views\IncomingChanges\IIncomingChangesTab.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryExplorerDialog.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Views\IncomingChanges\IIncomingChangesTab.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Tool\IsExeAvailable.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Help\HelpLinkData.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\PlasticSCM\Configuration\EncryptionConfigurationDialog.cs" />

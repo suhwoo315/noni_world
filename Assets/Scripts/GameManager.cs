@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private Animator playerAnimator;
     [SerializeField] private GameObject[] items;
     [SerializeField] private GameObject[] galaxies;
 
@@ -16,6 +15,12 @@ public class GameManager : MonoBehaviour
     private int targetHP;
     private int currentHP = 0;
     private int itemsLeft = 17; // except finish sign
+    private Animator playerAnimator;
+
+    void Start()
+    {
+        playerAnimator = player.GetComponent<Animator>();
+    }
 
     public void ActivateTouch()
     {

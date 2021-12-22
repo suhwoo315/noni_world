@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 6120223}
   - component: {fileID: 6120222}
   - component: {fileID: 6120221}
-  - component: {fileID: 6120220}
   - component: {fileID: 6120224}
+  - component: {fileID: 6120220}
   m_Layer: 0
   m_Name: huggle cuddle
   m_TagString: Item
@@ -152,30 +152,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 6120219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 10d6a6c1f4a3b4404b5585b5695bee4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - sdf
+  dialogue2:
+  - asdf
+  dialogue3:
+  - asdf
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1490666698}
+  player: {fileID: 0}
   dialogueText: {fileID: 1923298061}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &6120221
 BoxCollider2D:
@@ -242,7 +233,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 88927e304f68d4477a34bf52b681c78a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -792,8 +783,8 @@ GameObject:
   - component: {fileID: 228624487}
   - component: {fileID: 228624486}
   - component: {fileID: 228624485}
-  - component: {fileID: 228624484}
   - component: {fileID: 228624488}
+  - component: {fileID: 228624484}
   m_Layer: 0
   m_Name: bus
   m_TagString: Item
@@ -810,30 +801,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 228624483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f172e4b2fb6d4530a697407b94a76be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - adf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - sdfg
+  dialogue3:
+  - dgf
   gameManager: {fileID: 45547545}
   canvas: {fileID: 376234252}
+  player: {fileID: 0}
   dialogueText: {fileID: 543375933}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &228624485
 BoxCollider2D:
@@ -900,7 +882,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: d4a4043a8708c4dd096a7e0e3d9a400b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1244,8 +1226,8 @@ GameObject:
   - component: {fileID: 333587796}
   - component: {fileID: 333587795}
   - component: {fileID: 333587794}
-  - component: {fileID: 333587793}
   - component: {fileID: 333587797}
+  - component: {fileID: 333587793}
   m_Layer: 0
   m_Name: antonio preobrazhensky
   m_TagString: Item
@@ -1262,30 +1244,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 333587792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c7afcd1043084598aff7c630ece4ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - asdg
+  - sdg
+  dialogue1:
+  - df
+  - as
+  dialogue2:
+  - dfgh
+  - fgh
+  dialogue3:
+  - fgh
+  - as
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1375200397}
+  player: {fileID: 0}
   dialogueText: {fileID: 2094674299}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &333587794
 BoxCollider2D:
@@ -1352,7 +1329,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0998b36933e2e4c1eb4470ad635a179b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1905,8 +1882,8 @@ GameObject:
   - component: {fileID: 434805425}
   - component: {fileID: 434805424}
   - component: {fileID: 434805423}
-  - component: {fileID: 434805422}
   - component: {fileID: 434805426}
+  - component: {fileID: 434805422}
   m_Layer: 0
   m_Name: cdplayer
   m_TagString: Item
@@ -1923,30 +1900,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 434805421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f5715f53c71c474aac20ff099a0a1a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - asfd
+  dialogue1:
+  - fg
+  dialogue2:
+  - xcvb
+  dialogue3:
+  - qew
   gameManager: {fileID: 45547545}
   canvas: {fileID: 673326689}
+  player: {fileID: 463840863}
   dialogueText: {fileID: 1242691561}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &434805423
 BoxCollider2D:
@@ -2013,7 +1981,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 706f350249a35487fb6775c0860aca26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2914,30 +2882,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 544912920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 23cd84cac8c6d4b6d8a9575dc623597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - adf
+  dialogue2:
+  - asdf
+  dialogue3:
+  - af
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1503280127}
+  player: {fileID: 0}
   dialogueText: {fileID: 1289481917}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &544912922
 BoxCollider2D:
@@ -3004,7 +2963,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 48eab281a80c74917aafe1ddc9820f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3254,8 +3213,8 @@ GameObject:
   - component: {fileID: 627555502}
   - component: {fileID: 627555501}
   - component: {fileID: 627555503}
-  - component: {fileID: 627555504}
   - component: {fileID: 627555505}
+  - component: {fileID: 627555504}
   m_Layer: 0
   m_Name: cocotea
   m_TagString: Item
@@ -3302,7 +3261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 8a19fd36479cb4a12ade3780cc129c03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3364,34 +3323,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 627555500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: ba843707e2fb048a696d221b659ae230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - oh yeah cocotea
+  - i love it!
+  dialogue1:
+  - test
+  - testest
+  dialogue2:
+  - adad
+  - dsgdg
+  dialogue3:
+  - asdf
+  - dgh
   gameManager: {fileID: 45547545}
   canvas: {fileID: 929915840}
+  player: {fileID: 0}
   dialogueText: {fileID: 1809393426}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3:
-    - test
-    dialogue4:
-    - test
-    dialogue5:
-    - test
-    dialogue6:
-    - test
   newItem: 1
 --- !u!95 &627555505
 Animator:
@@ -3949,27 +3899,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1324041446}
+  player: {fileID: 0}
   dialogueText: {fileID: 1679661714}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &814517733
 BoxCollider2D:
@@ -4036,7 +3973,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 41565327c2c264817a0cd810e59b12d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4243,30 +4180,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 880260166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: a8d4e973f32c141b3a52cb0b0a0af0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - m
+  dialogue1:
+  - iu
+  dialogue2:
+  - vd
+  dialogue3:
+  - jyg
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1544350428}
+  player: {fileID: 0}
   dialogueText: {fileID: 1301444541}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &880260168
 BoxCollider2D:
@@ -4333,7 +4261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ec54807525bd74b3c92fc51a2d86f547, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4392,27 +4320,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 946550413}
+  player: {fileID: 0}
   dialogueText: {fileID: 758810485}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &891842583
 BoxCollider2D:
@@ -4479,7 +4394,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a6bcf91165c484c7e8fd409bba3ecbce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4690,27 +4605,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2002037223}
+  player: {fileID: 0}
   dialogueText: {fileID: 1611013927}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &922191369
 BoxCollider2D:
@@ -4777,7 +4679,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 04a2dc8980f7d450d86007780bc82a7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5480,30 +5382,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1041400061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: facac394cd09f4a408f24602948f9760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - cvb
+  dialogue1:
+  - ghj
+  dialogue2:
+  - zxcv
+  dialogue3:
+  - tyui
   gameManager: {fileID: 45547545}
   canvas: {fileID: 496701647}
+  player: {fileID: 463840863}
   dialogueText: {fileID: 1536327643}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1041400063
 BoxCollider2D:
@@ -5570,7 +5463,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 721c56f4394db46aba80ef71b5e6e955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5820,8 +5713,8 @@ GameObject:
   - component: {fileID: 1128055570}
   - component: {fileID: 1128055569}
   - component: {fileID: 1128055568}
-  - component: {fileID: 1128055567}
   - component: {fileID: 1128055571}
+  - component: {fileID: 1128055567}
   m_Layer: 0
   m_Name: cattodoggo
   m_TagString: Item
@@ -5838,30 +5731,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128055566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 211ea504ea1ec4347a2f98cd09a79e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - asdf
+  dialogue1:
+  - asdf
+  dialogue2:
+  - asf
+  dialogue3:
+  - asdf
   gameManager: {fileID: 45547545}
   canvas: {fileID: 439244491}
+  player: {fileID: 0}
   dialogueText: {fileID: 255938623}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1128055568
 BoxCollider2D:
@@ -5928,7 +5812,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 5d327f8cd70d94fb68d805b713633de3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8198,27 +8082,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2074747607}
+  player: {fileID: 0}
   dialogueText: {fileID: 250608862}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1405702845
 BoxCollider2D:
@@ -8285,7 +8156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: cbac6610908f841789e4272119c71c70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8683,8 +8554,8 @@ GameObject:
   - component: {fileID: 1494425527}
   - component: {fileID: 1494425526}
   - component: {fileID: 1494425525}
-  - component: {fileID: 1494425524}
   - component: {fileID: 1494425528}
+  - component: {fileID: 1494425524}
   m_Layer: 0
   m_Name: cipher278
   m_TagString: Item
@@ -8701,30 +8572,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494425523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: d39d82b96220047fb9aaaacd76974ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - vbn
+  dialogue1:
+  - gh
+  dialogue2:
+  - dfg
+  dialogue3:
+  - cv
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1362327643}
+  player: {fileID: 0}
   dialogueText: {fileID: 1350653884}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1494425525
 BoxCollider2D:
@@ -8791,7 +8653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 8de61134d66bc49b7b635e39cc3b13cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9547,7 +9409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9d72de11aa65e4f00b188ea6a3d343cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9612,22 +9474,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1705083344}
+  player: {fileID: 0}
   dialogueText: {fileID: 1750606128}
-  dialogueInfo:
-    dialogue0:
-    - finish
-    - ooh la la
-    dialogue1:
-    - finish
-    - finish
-    - ooh la la
-    dialogue2: []
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 0
 --- !u!95 &1639188399
 Animator:
@@ -10083,27 +9937,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 759251653}
+  player: {fileID: 0}
   dialogueText: {fileID: 1352401833}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1781160494
 BoxCollider2D:
@@ -10170,7 +10011,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: c659d0d202c874f6f8fe7435abe60c0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10599,27 +10440,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue: []
+  dialogue1: []
+  dialogue2: []
+  dialogue3: []
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1153696067}
+  player: {fileID: 0}
   dialogueText: {fileID: 1421965431}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1934525382
 BoxCollider2D:
@@ -10686,7 +10514,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 8d2037ce0fea14b89ad6cdaef33ede67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10972,30 +10800,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1977487362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799171a35be9f4185ba6909cf30cdc05, type: 3}
+  m_Script: {fileID: 11500000, guid: 1adcfee742edf41378a4b920a9cda9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstDialogue:
+  - df
+  dialogue1:
+  - dfg
+  dialogue2:
+  - adf
+  dialogue3:
+  - sfg
   gameManager: {fileID: 45547545}
   canvas: {fileID: 515397706}
+  player: {fileID: 463840863}
   dialogueText: {fileID: 2131735522}
-  dialogueInfo:
-    dialogue0:
-    - hmm... coco tea?
-    - (gulp gulp)
-    dialogue1:
-    - coco tea again!
-    - it's warm and sweeeet
-    - i feel cosy
-    dialogue2:
-    - yeah coco tea!
-    - i quite like it
-    - do you know it's made ouf of...
-    - (guess what)
-    - COCO FRUIT!
-    dialogue3: []
-    dialogue4: []
-    dialogue5: []
-    dialogue6: []
   newItem: 1
 --- !u!61 &1977487364
 BoxCollider2D:
@@ -11062,7 +10881,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: bb5b5254023ad400da121771e355469f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

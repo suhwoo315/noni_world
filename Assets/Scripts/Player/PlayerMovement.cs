@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y <= -30)
             {
                 animator.SetBool("isFalling", false);
+                animator.SetBool("isGalaxy", true);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 fallMode = false;
@@ -80,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y >= 0)
             {
                 animator.SetBool("isFalling", false);
+                animator.SetBool("isGalaxy", false);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 riseMode = false;
