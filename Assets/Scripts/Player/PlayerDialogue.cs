@@ -36,7 +36,9 @@ public class PlayerDialogue : MonoBehaviour
         if (roundCleared)
         {
             animator.SetBool("isHappy", true);
+            if (gameManager.stage == 4) animator.SetBool("isFinished", true);
             dialogue = dialogue6;
+            gameManager.CameraTouchMode();
         }
         else
         {

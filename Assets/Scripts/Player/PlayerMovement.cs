@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private GameObject rainbow;
     [SerializeField] private GameObject abyss;
+    [SerializeField] private GameObject boundary;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private Camera mainCamera;
@@ -58,32 +59,44 @@ public class PlayerMovement : MonoBehaviour
             rainbowAnimator.SetBool("isFadeout", true);
             playerRigidbody.gravityScale = 0.2f;
             if (transform.position.y < -5) playerRigidbody.gravityScale = 1.0f;
-            if (transform.position.y < -20) playerRigidbody.gravityScale = 0.2f;
+            if (transform.position.y < -40) playerRigidbody.gravityScale = 0.2f;
             if (transform.position.y <= -50)
             {
+                mainCamera.GetComponent<CameraMovement_TouchMode>().enabled = false;
                 rainbowAnimator.SetBool("isFadeout", false);
                 animator.SetBool("isFalling", false);
                 animator.SetBool("isGalaxy", true);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 fallMode = false;
-                moveMode = true;
                 gameManager.ActivateCollider();
                 gameManager.ActivateCollision();
                 gameManager.ShowGalaxies();
                 gameManager.RevealItems();
-                if (gameManager.stage != 1 || gameManager.round != 1) soundManager.ActivateSound2();
-                else mainCamera.GetComponent<CameraMovement>().enabled = false;
+                if (gameManager.stage != 1 || gameManager.round != 1)
+                {
+                    mainCamera.GetComponent<CameraMovement_MoveMode>().enabled = true;
+                    moveMode = true;
+                    soundManager.ActivateSound2();
+                }
+                else
+                {
+                    float targetX = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 0.5f, 0, 0)).x;
+                    float targetY = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height * 0.5f, 0)).y;
+                    boundary.transform.position = new Vector3(targetX, targetY, 0);
+                    boundary.SetActive(true);
+                    moveMode = true;
+                }
             }
         }
 
-        if (riseMode)
+        if (riseMode && mainCamera.GetComponent<CameraMovement_TouchMode>().enabled)
         {
             moveMode = false;
             StartCoroutine(StartRotation());
             rainbowAnimator.SetBool("isFadein", true);
             playerRigidbody.gravityScale = -0.2f;
-            if (transform.position.y > -20) playerRigidbody.gravityScale = -1.0f;
+            if (transform.position.y > -40) playerRigidbody.gravityScale = -1.0f;
             if (transform.position.y > -5) playerRigidbody.gravityScale = -0.2f;
             if (transform.position.y >= 0)
             {
