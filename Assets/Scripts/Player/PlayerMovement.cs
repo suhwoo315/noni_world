@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Camera mainCamera;
 
     public bool moveMode = false;
-    public bool fallMode = false;
-    public bool riseMode = false;
 
     private Rigidbody2D playerRigidbody;
     private Animator animator;
@@ -51,76 +49,85 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y < downLimit) transform.position = new Vector2(transform.position.x, upLimit);
             else if (transform.position.y > upLimit) transform.position = new Vector2(transform.position.x, downLimit);
         }
+    }
 
-        if (fallMode)
+    public void Fall()
+    {
+        playerRigidbody.freezeRotation = false;
+        soundManager.Mute();
+        animator.SetBool("isFalling", true);
+        rainbowAnimator.SetBool("isFadeout", true);
+        playerRigidbody.gravityScale = 0.2f;
+        StartCoroutine(ContinueFall());
+    }
+
+    IEnumerator ContinueFall()
+    {
+        yield return new WaitUntil(() => (transform.position.y < -5));
+        playerRigidbody.gravityScale = 1.0f;
+
+        yield return new WaitUntil(() => (transform.position.y < -40));
+        playerRigidbody.gravityScale = 0.2f;
+
+        yield return new WaitUntil(() => (transform.position.y <= -50));
+        mainCamera.GetComponent<CameraMovement_TouchMode>().enabled = false;
+        rainbowAnimator.SetBool("isFadeout", false);
+        animator.SetBool("isFalling", false);
+        animator.SetBool("isGalaxy", true);
+        playerRigidbody.gravityScale = 0f;
+        playerRigidbody.velocity = new Vector2(0, 0);
+        gameManager.ActivateCollider();
+        gameManager.ActivateCollision();
+        gameManager.ShowGalaxies();
+        gameManager.RevealItems();
+        if (gameManager.stage != 1 || gameManager.round != 1)
         {
-            playerRigidbody.freezeRotation = false;
-            StartCoroutine(StartRotation());
-            rainbowAnimator.SetBool("isFadeout", true);
-            playerRigidbody.gravityScale = 0.2f;
-            if (transform.position.y < -5) playerRigidbody.gravityScale = 1.0f;
-            if (transform.position.y < -40) playerRigidbody.gravityScale = 0.2f;
-            if (transform.position.y <= -50)
-            {
-                mainCamera.GetComponent<CameraMovement_TouchMode>().enabled = false;
-                rainbowAnimator.SetBool("isFadeout", false);
-                animator.SetBool("isFalling", false);
-                animator.SetBool("isGalaxy", true);
-                playerRigidbody.gravityScale = 0f;
-                playerRigidbody.velocity = new Vector2(0, 0);
-                fallMode = false;
-                gameManager.ActivateCollider();
-                gameManager.ActivateCollision();
-                gameManager.ShowGalaxies();
-                gameManager.RevealItems();
-                if (gameManager.stage != 1 || gameManager.round != 1)
-                {
-                    mainCamera.GetComponent<CameraMovement_MoveMode>().enabled = true;
-                    moveMode = true;
-                    soundManager.ActivateSound2();
-                }
-                else
-                {
-                    float targetX = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 0.5f, 0, 0)).x;
-                    float targetY = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height * 0.5f, 0)).y;
-                    boundary.transform.position = new Vector3(targetX, targetY, 0);
-                    boundary.SetActive(true);
-                    moveMode = true;
-                }
-            }
+            mainCamera.GetComponent<CameraMovement_MoveMode>().enabled = true;
+            moveMode = true;
+            soundManager.ActivateSound2();
         }
-
-        if (riseMode && mainCamera.GetComponent<CameraMovement_TouchMode>().enabled)
+        else
         {
-            moveMode = false;
-            StartCoroutine(StartRotation());
-            rainbowAnimator.SetBool("isFadein", true);
-            playerRigidbody.gravityScale = -0.2f;
-            if (transform.position.y > -40) playerRigidbody.gravityScale = -1.0f;
-            if (transform.position.y > -5) playerRigidbody.gravityScale = -0.2f;
-            if (transform.position.y >= 0)
-            {
-                if (Camera.main.WorldToScreenPoint(transform.position).x > Screen.width * 0.5f) transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
-                else transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
-                rainbowAnimator.SetBool("isFadein", false);
-                animator.SetBool("isFalling", false);
-                animator.SetBool("isGalaxy", false);
-                animator.SetBool("isOkay", false);
-                playerRigidbody.gravityScale = 0f;
-                playerRigidbody.velocity = new Vector2(0, 0);
-                transform.rotation = Quaternion.identity;
-                playerRigidbody.freezeRotation = true;
-                riseMode = false;
-                gameManager.ActivateTouch();
-                soundManager.ActivateSound1();
-            }
+            float targetX = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 0.5f, 0, 0)).x;
+            float targetY = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height * 0.5f, 0)).y;
+            boundary.transform.position = new Vector3(targetX, targetY, 0);
+            boundary.SetActive(true);
+            moveMode = true;
         }
     }
 
-    IEnumerator StartRotation()
+    public void Rise()
     {
+        StartCoroutine(ContinueRise());
+    }
+
+    IEnumerator ContinueRise()
+    {
+        yield return new WaitUntil(() => mainCamera.GetComponent<CameraMovement_TouchMode>().enabled);
+        moveMode = false;
         soundManager.Mute();
         animator.SetBool("isFalling", true);
-        yield return new WaitForSeconds(1.0f);
+        playerRigidbody.gravityScale = -0.2f;
+
+        yield return new WaitUntil(() => (transform.position.y > -40));
+        playerRigidbody.gravityScale = -1.0f;
+
+        yield return new WaitUntil(() => (transform.position.y > -20));
+        rainbowAnimator.SetBool("isFadein", true);
+
+        yield return new WaitUntil(() => (transform.position.y > -5));
+        playerRigidbody.gravityScale = -0.2f;
+
+        yield return new WaitUntil(() => (transform.position.y >= 0));
+        rainbowAnimator.SetBool("isFadein", false);
+        animator.SetBool("isFalling", false);
+        animator.SetBool("isGalaxy", false);
+        animator.SetBool("isOkay", false);
+        playerRigidbody.gravityScale = 0f;
+        playerRigidbody.velocity = new Vector2(0, 0);
+        transform.rotation = Quaternion.identity;
+        playerRigidbody.freezeRotation = true;
+        gameManager.ActivateTouch();
+        soundManager.ActivateSound1();
     }
 }

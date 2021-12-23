@@ -68,7 +68,7 @@ public class PlayerDialogue : MonoBehaviour
             animator.SetBool("isHappy", false);
             if (roundCleared)
             {
-                gameManager.ActivateRise();
+                GetComponent<PlayerMovement>().Rise();
                 gameManager.DeactivateCollider();
             }
             else if (stage == 0)
@@ -79,7 +79,7 @@ public class PlayerDialogue : MonoBehaviour
             else if ((0 < stage && stage < 4) || stage == 5)
             {
                 gameManager.SetTargetHP();
-                gameManager.ActivateFall();
+                GetComponent<PlayerMovement>().Fall();
             }
             else if (stage == 4)
             {

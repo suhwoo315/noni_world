@@ -9,7 +9,7 @@ public class Sign : ItemDialogue
         if (line >= dialogue.Length)
         {
             canvas.SetActive(false);
-            gameManager.ActivateRise();
+            player.GetComponent<PlayerMovement>().Rise();
         }
         else dialogueText.text = dialogue[line++];
     }

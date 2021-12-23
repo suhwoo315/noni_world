@@ -30,16 +30,6 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerTouch>().touchMode = true;
     }
 
-    public void ActivateFall()
-    {
-        player.GetComponent<PlayerMovement>().fallMode = true;
-    }
-
-    public void ActivateRise()
-    {
-        player.GetComponent<PlayerMovement>().riseMode = true;
-    }
-
     public void ActivateMove()
     {
         player.GetComponent<PlayerMovement>().moveMode = true;
