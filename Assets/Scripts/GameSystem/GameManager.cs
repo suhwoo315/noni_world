@@ -247,6 +247,11 @@ public class GameManager : MonoBehaviour
         mainCamera.GetComponent<CameraMovement_TouchMode>().enabled = true;
     }
 
+    public void Home()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
