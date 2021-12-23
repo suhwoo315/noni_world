@@ -23,6 +23,7 @@ public class PlayerTouch : MonoBehaviour
         {
             if (touchNumber > 4 || gameManager.stage == 4)
             {
+                animator.SetBool("isBending", false);
                 touchMode = false;
                 GetComponent<PlayerDialogue>().ShowDialogue(false);
             }

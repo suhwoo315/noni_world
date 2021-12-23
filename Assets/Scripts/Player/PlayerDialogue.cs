@@ -90,6 +90,7 @@ public class PlayerDialogue : MonoBehaviour
             if (dialogue == dialogue2 && line == 4)
             {
                 dialogueText.text = "i like " + gameManager.collectedItems[Random.Range(0, gameManager.collectedItems.Length)];
+                line++;
             }
             else dialogueText.text = dialogue[line++];
         }

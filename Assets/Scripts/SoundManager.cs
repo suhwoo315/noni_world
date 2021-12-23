@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour
     public void ActivateSound1()
     {
         Mute();
-        nextEventTime = AudioSettings.dspTime + 30.857f;
+        nextEventTime = AudioSettings.dspTime + rainbow_1.length;
         audioSource[0].clip = rainbow_1;
         audioSource[0].loop = false;
         audioSource[0].Play();
@@ -41,17 +41,16 @@ public class SoundManager : MonoBehaviour
 
     public void ActivateSound2()
     {
-        Mute();
+        audioSource[0].Stop();
+        audioSource[1].Stop();
         nextEventTime = AudioSettings.dspTime + 1.5f;
-        audioSource[0].clip = floating;
-        audioSource[0].loop = true;
-        audioSource[0].PlayScheduled(nextEventTime);
+        audioSource[2].PlayScheduled(nextEventTime);
     }
 
     public void ActivateSound3()
     {
-        Mute();
-        nextEventTime = AudioSettings.dspTime + 16.218f;
+        audioSource[2].Pause();
+        nextEventTime = AudioSettings.dspTime + happy_1.length;
         audioSource[0].clip = happy_1;
         audioSource[0].loop = false;
         audioSource[0].Play();
@@ -73,5 +72,6 @@ public class SoundManager : MonoBehaviour
     {
         audioSource[0].Stop();
         audioSource[1].Stop();
+        audioSource[2].Stop();
     }
 }

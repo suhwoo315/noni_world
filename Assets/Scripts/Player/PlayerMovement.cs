@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private GameObject rainbow;
     [SerializeField] private GameObject abyss;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private SoundManager soundManager;
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D playerRigidbody;
     private Animator animator;
+    private Animator rainbowAnimator;
     private float horizontal;
     private float vertical;
     private float speed = 3.0f;
@@ -28,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         animator = transform.GetChild(0).GetComponent<Animator>();
+        rainbowAnimator = rainbow.GetComponent<Animator>();
         rightLimit = abyss.GetComponent<SpriteRenderer>().bounds.extents.x;
         leftLimit = -rightLimit;
         downLimit = abyss.transform.position.y - abyss.GetComponent<SpriteRenderer>().bounds.extents.y;
@@ -52,11 +55,13 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRigidbody.freezeRotation = false;
             StartCoroutine(StartRotation());
+            rainbowAnimator.SetBool("isFadeout", true);
             playerRigidbody.gravityScale = 0.2f;
             if (transform.position.y < -5) playerRigidbody.gravityScale = 1.0f;
             if (transform.position.y < -20) playerRigidbody.gravityScale = 0.2f;
-            if (transform.position.y <= -30)
+            if (transform.position.y <= -50)
             {
+                rainbowAnimator.SetBool("isFadeout", false);
                 animator.SetBool("isFalling", false);
                 animator.SetBool("isGalaxy", true);
                 playerRigidbody.gravityScale = 0f;
@@ -76,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         {
             moveMode = false;
             StartCoroutine(StartRotation());
+            rainbowAnimator.SetBool("isFadein", true);
             playerRigidbody.gravityScale = -0.2f;
             if (transform.position.y > -20) playerRigidbody.gravityScale = -1.0f;
             if (transform.position.y > -5) playerRigidbody.gravityScale = -0.2f;
@@ -83,8 +89,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Camera.main.WorldToScreenPoint(transform.position).x > Screen.width * 0.5f) transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
                 else transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+                rainbowAnimator.SetBool("isFadein", false);
                 animator.SetBool("isFalling", false);
                 animator.SetBool("isGalaxy", false);
+                animator.SetBool("isOkay", false);
                 playerRigidbody.gravityScale = 0f;
                 playerRigidbody.velocity = new Vector2(0, 0);
                 transform.rotation = Quaternion.identity;
