@@ -156,13 +156,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - Huggly cuddly snuggly!
+  - Hi, lovely stranger!
+  - I'm Huggle-Cuddle!
+  - I love hugging!
+  - Because we all deserve
+  - more love!
+  - Much much much
+  - more love!!
   dialogue1:
-  - sdf
+  - Huggly cuddly snuggly!
+  - Sometimes people say mean stuffs
+  - or do impolite things.
+  - And it hurts...
+  - We don't even have time to
+  - just love each other!
   dialogue2:
-  - asdf
+  - Huggly cuddly snuggly!
+  - Hey, stranger,
+  - can I give you a hug?
+  - Warm bear hug!
   dialogue3:
-  - asdf
+  - Huggly cuddly snuggly!
+  - Hey, stranger,
+  - let me give you a hug!
+  - Oh, you're shy?
+  - Then let's just dance together!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2026169534}
@@ -999,7 +1018,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: noni
+  m_Text: Noni
 --- !u!1 &228624483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,13 +1052,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - adf
+  - an ordinary bus
+  - '[  be-beep!  ]'
+  - there is a seat at the very back
+  - it's actually quite fun to
+  - watch outside the window
+  - and observe the world
   dialogue1:
-  - asdf
+  - outside the window,
+  - trees are swaying by the wind
+  - and leaves are dancing...
+  - just watching them move
+  - empties my head and mind
+  - and weirdly
+  - it's very fulfilling!
   dialogue2:
-  - sdfg
+  - outside the window,
+  - people are walking...
+  - where are they all busily going?
+  - if i could collect
+  - each person's story
+  - and make it into a book,
+  - it'll be so long that
+  - it could touch the moon!
+  - hmm...
+  - wouldn't that be so interesting?
   dialogue3:
-  - dgf
+  - oh, by the way,
+  - where are we heading to?
+  - ...
+  - you don't know, too?
+  - well, let's just sit down
+  - and enjoy the view outside...!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1763462110}
@@ -1503,32 +1547,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - waaaaazzzzzaaaaa!!!
-  - me antonio preobrazhensky
-  - proud and confident!
-  - unique and fantastic!
-  - hey green friend,
-  - do you think i'm weird?
-  - yessssaaaaa!!!
-  - i am weird!!!
-  - but weird is what makes me
-  - antonio preobrazhensky!!!
-  - i let my soul sing and dance
-  - to the music of my heart
-  - how weird but romantic!!!
-  - waaaaazzzzaaaaapppp
+  - Waaaaazzzzzaaaaa!!!
+  - Me, Antonio Preobrazhensky,
+  - Proud and confident!
+  - Unique and fantastic!
+  - Hey, green friend,
+  - do you think I'm weird?
+  - Yessssaaaaa!!!
+  - I am weird!!!
+  - But weird is what makes me
+  - Antonio Preobrazhensky!!!
+  - I let my soul sing and dance
+  - to the music of my heart.
+  - How weird but romantic!!!
+  - Waaaaazzzzaaaaapppp
   - green friend!!!
-  - come join me
-  - let's be weird and beautiful!!!
+  - Come join me.
+  - Let's be weird and beautiful!!!
   dialogue1:
-  - df
-  - as
+  - Waaaaaddddaaaazzzuu!!!
+  - Sometimes people look at me
+  - with curious eyes.
+  - When I was little,
+  - I used to be scared of those eyes.
+  - But now I enjoy their curiosity!
+  - Because I'm a...
+  - STARRRRRR!!!
   dialogue2:
-  - dfgh
-  - fgh
+  - Wwwwwooooowwww!!!
+  - Hey, green friend!
+  - Looking closely at you,
+  - I found a very interesting thing about you!
+  - You're not only one shade of green,
+  - but three!!!
+  - How cool is that!!!
+  - Unique!!!
   dialogue3:
-  - fgh
-  - as
+  - Woooooyaaaaaa!!!
+  - Yes, green friend,
+  - there are times I need to
+  - turn my volume down.
+  - Then I just stop my crazy hair
+  - for a while...
+  - Very simple!
+  - And then when it's time to turn my volume up,
+  - I turn on my crazy hair and
+  - voilaaaaaa!!!
+  - It's Antonio Preobrazhensky!!!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1953157964}
@@ -2106,13 +2171,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asfd
+  - a random cd player
+  - out of nowhere
+  - '[  click!  ]'
+  - "[  \u266B\u266A\u266C  ]"
+  - now it's time to dance
   dialogue1:
-  - fg
+  - "[  \u266B\u266A\u266C  ]"
+  - a song you hear
+  - for the first time
+  - unfamiliar but you like it!
   dialogue2:
-  - xcvb
+  - "[  \u266B\u266A\u266C  ]"
+  - this song is perfect for
+  - dancing!
   dialogue3:
-  - qew
+  - "[  \u266B\u266A\u266C  ]"
+  - we all need to dance sometimes
+  - let's be silly and funny
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 861986483}
@@ -3191,19 +3267,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstDialogue:
   - a new bottle of body lotion
-  - '[ pop! ]'
+  - '[  pop!  ]'
   - hmm... smells like
   - cotton candy!
   dialogue1:
   - a secret nobody knows
-  - '[ this is made out of'
-  - real cotton candy ]
+  - '[  this is made out of  ]'
+  - '[  real cotton candy  ]'
   dialogue2:
-  - apply it gently on your skin
-  - because
-  - you are a lovely baby
+  - apply gently on your skin
+  - pat to absorb thoroughly
+  - and
+  - sing your favourite tune
   dialogue3:
-  - af
+  - body lotion after
+  - a fresh shower
+  - oh, so happy!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1612591799}
@@ -8321,10 +8400,11 @@ MonoBehaviour:
   - fortune tellers say
   - you can read coco tea cup
   - hmm.. what does it say?
-  - '[ you are cute! ]'
+  - '[  you are cute!  ]'
   dialogue3:
-  - asdf
-  - dgh
+  - coco tea in your favourite mug
+  - is there anything
+  - more delightful than that?
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1149503977}
@@ -9368,13 +9448,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asf
+  - it's raining outside
+  - listen to the raindrops
+  - knocking on your window
   dialogue1:
-  - sdfg
+  - watching raindrops
+  - for no purpose
+  - washes your worries away
   dialogue2:
-  - zcv
+  - '[  drop drop  ]'
+  - waking up with the sound of rain
+  - makes you want to sleep more
+  - just a bit more...
+  - oh
+  - it's saturday!
   dialogue3:
-  - wer
+  - when it rains outside
+  - open your window and
+  - stretch your armsout
+  - it feels cold and happy
+  - to catch some raindrops
+  - in your palm!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1118566956}
@@ -9762,13 +9856,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - m
+  - crunchip never disappoints you
+  - '[  crunch crunch  ]'
   dialogue1:
-  - iu
+  - crunchip comes with
+  - various flavours
+  - from unicorn glitter flavour
+  - to shooting star flavour
   dialogue2:
-  - vd
+  - snack time!
+  - come bring your favourite crunchip
+  - and watch your favourite show
   dialogue3:
-  - jyg
+  - '[  crunch crunch  ]'
+  - what a fun sound
+  - hehe
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 465755231}
@@ -14679,13 +14781,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - summer grass
+  - under crispy sunlight
+  - a little wind blows
+  - how peaceful!
   dialogue1:
-  - sdg
+  - sitting on summer grass
+  - doing nothing
+  - oh, how can life be more joyful!
   dialogue2:
-  - dfg
+  - '[  zing zing zing  ]'
+  - cicadas sound
+  - very rhythmic
+  - breathe in and out on its rhythm
+  - now that's a very good meditation!
   dialogue3:
-  - sdfg
+  - '[  buzz buzz  ]'
+  - bees want to say hi
+  - it's a bit scary
+  - but i promise you
+  - they don't want to hurt you
+  - they're just curious creatures
+  - wondering what you're doing here
+  - sitting on summer grass
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1119108353}
@@ -14762,7 +14880,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: a6bcf91165c484c7e8fd409bba3ecbce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14841,13 +14959,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - blue sky with puffy clouds
+  - it's fun to watch clouds go by
   dialogue1:
-  - asdf
+  - laying on the ground
+  - watching clouds go by
+  - ...
+  - that one looks like
+  - a butterfly!
   dialogue2:
-  - sdfg
+  - laying on the ground
+  - watching clouds go by
+  - ...
+  - that one looks like
+  - a humming bird!
   dialogue3:
-  - er
+  - blue sky makes me breathe...
+  - breathe very, very deep
+  - from the bottom of my lungs...
+  - wide and open
+  - high and endless
+  - what a beauty!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 460400718}
@@ -15293,13 +15425,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - cvb
+  - <supernova> vol.39
+  - how can this comic be so fun?
+  - can't wait for next volume
   dialogue1:
-  - ghj
+  - when your day is over,
+  - it's so satisfying to
+  - sit down on a comfy sofa
+  - and read <supernova>!
   dialogue2:
-  - zxcv
+  - people say <supernova> vol.40 is
+  - coming next year...
+  - i'll tell you a secret
+  - ...
+  - it's going to be published on...
+  - 31st of April
+  - ...
+  - '[  is there 31st in April...?  ]'
   dialogue3:
-  - tyui
+  - why <supernova> is so popular...
+  - interesting characters
+  - philosophical message
+  - dramatic composition
+  - ...
+  - and cool title
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 607306383}
@@ -15936,7 +16085,10 @@ MonoBehaviour:
   - ...
   - makes you smile
   dialogue2:
-  - asf
+  - sleeping cattodoggo on your lap
+  - warm and fluffy
+  - now you sleep, too
+  - '[  zzz...  ]'
   dialogue3:
   - cattodoggo wants to say something
   - '[ woff woff ]'
@@ -16239,7 +16391,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: cipher278
+  m_Text: Cipher 278
 --- !u!222 &1151977203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16723,7 +16875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: antonio preobrazhensky
+  m_Text: Antonio Preobrazhensky
 --- !u!222 &1348003479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17056,32 +17208,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - hellllooouuu
-  - are you lost?
+  - Hellllooouuu
+  - Are you lost?
   - ...
-  - me too!
+  - Me too!
   - ...
-  - but it's fine, little fellooowww
-  - after all isn't that beauty of life?
-  - follow the wind,
-  - you'll find the sky
-  - follow the river,
-  - you'll find the sea
-  - let your soul be freeeeee
+  - But it's fine, little fellooowww.
+  - After all isn't that beauty of life?
+  - Follow the wind,
+  - you'll find the sky.
+  - Follow the river,
+  - you'll find the sea.
+  - Let your soul be freeeeee!
   dialogue1:
-  - helloouu little felloooww
-  - have you taken a thoroughly
+  - Helloouu little felloooww.
+  - Have you taken a thoroughly
   - free-spirited tour in this space?
-  - i've been wandering for
+  - I've been wandering for
   - quite a long time
   - and found many interesting
   - stuffs in this space...
-  - unexpected encounters!
-  - what a fun indeed!
+  - Unexpected encounters!
+  - What a fun indeed!
   dialogue2:
-  - asdf
+  - Wandering in an endless space...
+  - Might seem meaningless...
+  - Yes, I knooooowwww.
+  - No destination,
+  - no termination.
+  - But whhhhyyyy?
+  - I just like watching these stars...!
   dialogue3:
-  - adsf
+  - If you wander for a long time,
+  - there are moments where
+  - you suddenly discover
+  - deepest secrets of the world...!
+  - Then you open your eyes wide
+  - and say
+  - ...
+  - eurekaaaaaaaa...!!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1477309731}
@@ -17549,49 +17714,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue0:
-  - hi
-  - i'm noni
+  - Hi,
+  - I'm Noni.
   dialogue1:
   - ...
-  - sometimes i feel like
-  - i'm falling into an endless
-  - a
-  - ab
-  - aby
-  - abys
-  - abyss
-  - abyss.
-  - abyss..
-  - abyss...
+  - Sometimes I feel like
+  - I'm falling into an endless
+  - A
+  - AB
+  - ABY
+  - ABYS
+  - ABYSS
+  - ABYSS.
+  - ABYSS..
+  - ABYSS...
   dialogue2:
   - ...
-  - sometimes i feel like
-  - i'm falling into an endless abyss
+  - Sometimes I feel like
+  - I'm falling into an endless abyss.
   - ...
+  - Hmm...
   - 
   dialogue3:
   - ...
-  - sometimes i feel like
-  - i'm falling into an endless abyss
+  - Sometimes I feel like
+  - I'm falling into an endless abyss.
   - .
   - ..
   - ...
-  - but it's okay
+  - But it's okay.
   dialogue4:
-  - hi friend
-  - thank you
-  - 
-  - you can always come back
-  - just chill...
-  - floating in abyss with me,
-  - you know
-  - may your abyss be filled with
-  - beautiful stars
+  - Hi, friend.
+  - Thank you.
+  - Thank you for being here with me
+  - in my deepest, darkest abyss.
+  - Sometimes I fall into it...
+  - And it makes me feel
+  - confused
+  - lost
+  - anxious
+  - melancholy
+  - and somewhat angry.
+  - And it seems like I can
+  - never get out of it.
+  - ...
+  - Weirdly...
+  - it's the smallest, tiniest things
+  - that actually get me out of it.
+  - So small,
+  - so tiny
+  - that I don't not even notice
+  - they're there.
+  - ...
+  - Weird, huh?
+  - Hmm...
+  - How peculiar...
+  - ...
+  - I'll probably
+  - never get out of the abyss.
+  - But it's okay.
+  - Because you have lighten up
+  - my abyss into a
+  - beautiful galaxy...!
+  - ...
+  - You can come back
+  - anytime you wish.
+  - Just chill with me, you know.
+  - Floating in starry galaxy...
+  - ...
+  - Hmm...
+  - I feel like having a cup of coco tea.
+  - So, goodbye for now, my friend.
+  - May your life be filled with
+  - lovely little stars.
   dialogue5:
   - 
   dialogue6:
   - ...
-  - now i feel much better
+  - Now I feel much better.
   gameManager: {fileID: 45547545}
   canvas: {fileID: 341990331}
   dialogueText: {fileID: 1083269232}
@@ -17975,13 +18175,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - vbn
+  - Be-beep!
+  - Be-beep! Be-beep!
+  - This is Cipher, Cipher 278.
+  - I came from the future.
+  - I am here to tell you about it.
+  - Be-beep! Be-beep!
+  - '[  Y.O.U. A.R.E. G.O.I.N.G. T.O. B.E.  ]'
+  - '[  H.A.P.P.Y.  ]'
   dialogue1:
-  - gh
+  - Be-beep!
+  - Be-beep! Be-beep!
+  - This is Cipher, Cipher 278.
+  - I came from the future.
+  - I am here to tell you about it.
+  - Be-beep! Be-beep!
+  - '[  Y.O.U. A.R.E. G.O.I.N.G. T.O. B.E.  ]'
+  - '[  P.E.A.C.E.F.U.L.  ]'
   dialogue2:
-  - dfg
+  - Be-beep!
+  - Be-beep! Be-beep!
+  - This is Cipher, Cipher 278.
+  - I came from the future.
+  - I am here to tell you about it.
+  - Be-beep! Be-beep!
+  - '[  Y.O.U. A.R.E. G.O.I.N.G. T.O. B.E.  ]'
+  - '[  G.O.R.G.E.O.U.S.  ]'
   dialogue3:
-  - cv
+  - Be-beep!
+  - Be-beep! Be-beep!
+  - This is Cipher, Cipher 278.
+  - I came from the future.
+  - I am here to tell you about it.
+  - Be-beep! Be-beep!
+  - '[  Y.O.U. A.R.E. G.O.I.N.G. T.O. B.E.  ]'
+  - '[  S.U.C.C.E.S.S.F.U.L.  ]'
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 1761616943}
@@ -18814,8 +19042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
-  - sdg
+  - did you enjoy your voyage?
+  - see you next time!
   dialogue1: []
   dialogue2: []
   dialogue3: []
@@ -19747,13 +19975,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - favourite sweater
+  - very soft and comfy
   dialogue1:
-  - asdf
+  - when the world is too hard on you
+  - put on your favourite sweater
+  - and it'll protect you from
+  - the sharp arrows of the world
   dialogue2:
-  - adf
+  - this sweater has been worn
+  - so many times that
+  - it's become extremely stretchy
   dialogue3:
-  - asdf
+  - when you like your sweater so much,
+  - you don't want to wear it
+  - but just look at it
+  - for a good deal of time
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 2081709294}
@@ -20145,13 +20382,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - asdf
+  - Hi-yo
+  - I am Luckee!
+  - Huh?
+  - What am I carrying?
+  - This is a bag of luck!
+  - I share luck with people.
+  - Whenever you need a bit of luck,
+  - come talk to me!
   dialogue1:
-  - asdf
+  - Oh, you need some luck?
+  - Here you go!
+  - It's a four-leaved clover!
+  - We all need a little luck in our lives!
   dialogue2:
-  - asdf
+  - Oh, you need some luck?
+  - Here you go!
+  - It's a four...
+  - '[  ?!?!  ]'
+  - Three-leaved clover!
+  - It means happiness!
+  - With all my heart,
+  - I wish you happiness!
   dialogue3:
-  - asdf
+  - Oh, you need some luck?
+  - Here you go!
+  - It's a four-leaved clover!
+  - A little luck doesn't hurt, does it?
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 706359541}
@@ -20345,7 +20602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: luckee
+  m_Text: Luckee
 --- !u!222 &1938488905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20582,7 +20839,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: huggle-cuddle
+  m_Text: Huggle-Cuddle
 --- !u!222 &1966469067
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20623,13 +20880,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogue:
-  - df
+  - favourite blanket
+  - soft and cosy
+  - we all need to nap sometimes
+  - and now is the perfect time to nap!
+  - '[  zzz...  ]'
   dialogue1:
-  - dfg
+  - '[  zzz...  ]'
+  - this blanket is especially cosy
+  - i can't stop sleeping
   dialogue2:
-  - adf
+  - '[  zzz...  ]'
+  - when life is too hard on you,
+  - snuggle into a blanket
   dialogue3:
-  - sfg
+  - '[  zzz...  ]'
+  - sleeping without dream is peaceful
+  - sleeping with dream is exciting
+  - any side, i love sleeping!
   player: {fileID: 1463886587}
   gameManager: {fileID: 45547545}
   canvas: {fileID: 810910836}
@@ -21429,7 +21697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: wanderer
+  m_Text: Wanderer
 --- !u!222 &2091893213
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -89,9 +89,9 @@ public class PlayerDialogue : MonoBehaviour
         }
         else
         {
-            if (dialogue == dialogue2 && line == 4)
+            if (dialogue == dialogue2 && line == 5)
             {
-                dialogueText.text = "i like " + gameManager.collectedItems[Random.Range(0, gameManager.collectedItems.Length)];
+                dialogueText.text = "I like " + gameManager.collectedItems[Random.Range(0, gameManager.collectedItems.Length)];
                 line++;
             }
             else dialogueText.text = dialogue[line++];
