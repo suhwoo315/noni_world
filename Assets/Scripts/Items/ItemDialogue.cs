@@ -14,6 +14,7 @@ public class ItemDialogue : MonoBehaviour
     [SerializeField] protected GameObject player;
     [SerializeField] protected GameManager gameManager;
     [SerializeField] protected GameObject canvas;
+    [SerializeField] protected GameObject backgroundCanvas;
     [SerializeField] protected Text dialogueText;
 
     [SerializeField] private SoundManager soundManager;
@@ -37,6 +38,7 @@ public class ItemDialogue : MonoBehaviour
         else dialogue = RandomDialogue();
         dialogueText.text = dialogue[line++];
         canvas.SetActive(true);
+        backgroundCanvas.SetActive(true);
     }
 
     public virtual void ItemNextDialogue()
@@ -47,6 +49,7 @@ public class ItemDialogue : MonoBehaviour
             EndDialogue();
             newItem = false;
             canvas.SetActive(false);
+            backgroundCanvas.SetActive(false);
             gameManager.ActivateMove();
             if (!gameManager.CheckGameState()) StartCoroutine(WaitForActivateCollision());
         }

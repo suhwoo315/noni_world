@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Crunchip : ItemDialogue
 {
-    private ParticleSystem particle;
+    //private ParticleSystem particle;
 
     void Start()
     {
-        particle = GetComponent<ParticleSystem>();
+        //particle = GetComponent<ParticleSystem>();
     }
 
     public override string[] FirstDialogue()
     {
-        particle.Play();
+        //particle.Play();
         return firstDialogue;
     }
 
     public override string[] RandomDialogue()
     {
-        particle.Play();
+        //particle.Play();
         switch (Random.Range(1, 3))
         {
             case 1: return dialogue1;
@@ -31,6 +31,6 @@ public class Crunchip : ItemDialogue
 
     public override void EndDialogue()
     {
-        particle.Stop();
+        //particle.Stop();
     }
 }

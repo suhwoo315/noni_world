@@ -15,6 +15,7 @@ public class PlayerDialogue : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject backgroundCanvas;
     [SerializeField] private Text dialogueText;
 
     private string[] dialogue;
@@ -56,6 +57,7 @@ public class PlayerDialogue : MonoBehaviour
         }
         dialogueText.text = dialogue[line++];
         canvas.SetActive(true);
+        backgroundCanvas.SetActive(true);
     }
 
     public void PlayerNextDialogue()
@@ -63,6 +65,7 @@ public class PlayerDialogue : MonoBehaviour
         if (line >= dialogue.Length)
         {
             canvas.SetActive(false);
+            backgroundCanvas.SetActive(false);
             GetComponent<PlayerTouch>().touchNumber = 0;
             animator.SetBool("isTalking", false);
             animator.SetBool("isHappy", false);

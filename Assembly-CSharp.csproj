@@ -80,6 +80,7 @@
     <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Items/ItemDialogue.cs" />
     <Compile Include="Assets/Scripts/GameSystem/SoundManager.cs" />
+    <Compile Include="Assets/Scripts/GameSystem/GameManagerMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
